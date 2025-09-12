@@ -1,0 +1,5 @@
+agency_id,agency_name,agency_url,agency_timezone,agency_phone,agency_fare_url,agency_email,agency_lang
+RM,Red Metropolitana de Movilidad,http://www.red.cl,America/Santiago,,https://www.red.cl/tarifas-y-recargas/,,
+MT,EFE Trenes de Chile,http://www.efe.cl,America/Santiago,,https://www.red.cl/tarifas-y-recargas/,,
+BAA,Bus de Acercamiento Aeropuerto,http://www.nuevopudahuel.cl,America/Santiago,,https://www.red.cl/tarifas-y-recargas/,,
+M,Metro de Santiago,http://www.metro.cl,America/Santiago,6006009292,https://www.metro.cl/el-viaje/horarios-y-tarifas,comunidad@metro.cl,es

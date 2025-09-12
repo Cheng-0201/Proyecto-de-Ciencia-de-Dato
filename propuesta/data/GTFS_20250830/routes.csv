@@ -1,0 +1,425 @@
+route_id,agency_id,route_short_name,route_long_name,route_desc,route_type,route_url,route_color,route_text_color
+101,RM,101,Recoleta - Cerrillos,,3,,AF2B1E,FFFFFF
+102,RM,102,(M) Las Rejas - San Carlos Oriente,,3,,AF2B1E,FFFFFF
+103,RM,103,Providencia - San Luis De Macul,,3,,AF2B1E,FFFFFF
+104,RM,104,Providencia - Camilo Henriquez,,3,,AF2B1E,FFFFFF
+105,RM,105,Renca - Lo Espejo,,3,,AF2B1E,FFFFFF
+105c,RM,105c,Lo Valledor - Lo Espejo,,3,,AF2B1E,FFFFFF
+106,RM,106,Nueva San Martin - Peñalolen,,3,,AF2B1E,FFFFFF
+107,RM,107,Ciudad Empresarial - Av. Departamental,,3,,AF2B1E,FFFFFF
+107c,RM,107c,Ciudad Empresarial - Plaza Renca,,3,,AF2B1E,FFFFFF
+108,RM,108,Maipu - La Florida,,3,,AF2B1E,FFFFFF
+109,RM,109,Renca - Maipu,,3,,00929E,FFFFFF
+109N,RM,109N,Plaza Italia - Maipu,,3,,00929E,FFFFFF
+110,RM,110,Renca - Maipu,,3,,00929E,FFFFFF
+110c,RM,110c,Lo Echevers - Pudahuel Sur,,3,,00929E,FFFFFF
+111,RM,111,(M) Pajaritos - Ciudad Satelite,,3,,00A77E,FFFFFF
+113,RM,113,Ciudad Satelite - (M) Los Heroes,,3,,00A77E,FFFFFF
+113c,RM,113c,(M) Cerrillos - Ciudad Satelite,,3,,00A77E,FFFFFF
+113e,RM,113e,Ciudad Satelite - (M) Los Heroes,,3,,00A77E,FFFFFF
+114,RM,114,(M) Ñuñoa - Camilo Henriquez,,3,,AF2B1E,FFFFFF
+115,RM,115,Villa El Abrazo -  (M) Los Heroes,,3,,00929E,FFFFFF
+115c,RM,115c,Villa El Abrazo -  (M) Cerrillos,,3,,00929E,FFFFFF
+116,RM,116,Huechuraba - Centro,,3,,AF2B1E,FFFFFF
+117,RM,117,(M) Vespucio Norte - Departamental Oriente,,3,,AF2B1E,FFFFFF
+117c,RM,117c,Huechuraba - Providencia,,3,,AF2B1E,FFFFFF
+118,RM,118,Maipu - La Florida,,3,,00929E,FFFFFF
+119,RM,119,Mapocho - Lo Espejo,,3,,00A77E,FFFFFF
+120,RM,120,Renca - (M) La Cisterna,,3,,AF2B1E,FFFFFF
+121,RM,121,Mapocho - Lo Espejo,,3,,00A77E,FFFFFF
+124,RM,124,(M) Macul - Puente Alto,,3,,AF2B1E,FFFFFF
+125,RM,125,(M) U. De Chile - Lo Espejo,,3,,00A77E,FFFFFF
+126,RM,126,(M) Manuel Montt - La Higuera,,3,,00A77E,FFFFFF
+201,RM,201,Mall Plaza Norte - San Bernardo,,3,,AF2B1E,FFFFFF
+201e,RM,201e,(M) Santa Ana - San Bernardo,,3,,AF2B1E,FFFFFF
+203,RM,203,Av. Recoleta - La Pintana,,3,,0951BC,FFFFFF
+203N,RM,203N,Huechuraba - La Pintana,,3,,0951BC,FFFFFF
+203c,RM,203c,La Granja - La Pintana,,3,,0951BC,FFFFFF
+203e,RM,203e,Centro - La Pintana,,3,,0951BC,FFFFFF
+204,RM,204,Alameda - Pie Andino,,3,,AF2B1E,FFFFFF
+204e,RM,204e,Alameda - Gabriela,,3,,0951BC,FFFFFF
+204N,RM,204N,Alameda - Pie Andino,,3,,AF2B1E,FFFFFF
+205,RM,205,Santiago - Puente Alto,,3,,AF2B1E,FFFFFF
+205c,RM,205c,Puente Alto - (M) Santa Rosa,,3,,AF2B1E,FFFFFF
+206,RM,206,Centro - La Pintana,,3,,0951BC,FFFFFF
+206c,RM,206c,(M) Bio Bio - La Pintana,,3,,0951BC,FFFFFF
+207,RM,207,Mapocho - Av. Santa Rosa,,3,,0951BC,FFFFFF
+207c,RM,207c,(M) Santa Rosa - El Retiro,,3,,0951BC,FFFFFF
+207e,RM,207e,Mapocho - Av. Santa Rosa,,3,,0951BC,FFFFFF
+208,RM,208,Huechuraba - Centro,,3,,0951BC,FFFFFF
+208c,RM,208c,Huechuraba - (M) Zapadores,,3,,0951BC,FFFFFF
+209,RM,209,Alameda - El Volcan,,3,,0951BC,FFFFFF
+209c,RM,209c,(M) Santa Rosa - El Volcan,,3,,0951BC,FFFFFF
+210,RM,210,Estacion Central - Puente Alto,,3,,AF2B1E,FFFFFF
+210e,RM,210e,Estacion Central - Puente Alto,,3,,AF2B1E,FFFFFF
+210v,RM,210v,Estacion Central - Av. Mexico,,3,,AF2B1E,FFFFFF
+211,RM,211,La Florida - Nos,,3,,0951BC,FFFFFF
+211c,RM,211c,(M) La Cisterna - San Bernardo,,3,,F58220,000000
+212,RM,212,Providencia - La Pintana,,3,,0951BC,FFFFFF
+213e,RM,213e,Plaza Italia - Puente Alto,,3,,AF2B1E,FFFFFF
+214,RM,214,Santa Olga - Los Libertadores,,3,,AF2B1E,FFFFFF
+216,RM,216,Pablo De Rokha - Vitacura,,3,,0951BC,FFFFFF
+217e,RM,217e,Maestranza - (M) Santa Ana,,3,,0951BC,FFFFFF
+219e,RM,219e,(M) La Cisterna - Ciudad Empresarial,,3,,0951BC,FFFFFF
+223,RM,223,Santiago - Lo Espejo,,3,,F58220,000000
+224,RM,224,Ñuñoa - Gabriela,,3,,AF2B1E,FFFFFF
+224c,RM,224c,(M) Vicente Valdes - Gabriela,,3,,0951BC,FFFFFF
+225,RM,225,Las Condes - Bahia Catalina,,3,,0951BC,FFFFFF
+226,RM,226,Centro - Nonato Coo,,3,,AF2B1E,FFFFFF
+227,RM,227,La Reina - Av. Lo Ovalle,,3,,AF2B1E,FFFFFF
+228,RM,228,(M) La Cisterna - Estacion San Bernardo,,3,,F58220,000000
+229,RM,229,(M) La Moneda - La Pintana,,3,,0951BC,FFFFFF
+230,RM,230,Los Libertadores - Centro,,3,,AF2B1E,FFFFFF
+233,RM,233,El Castillo - (M) Bellavista De La Florida,,3,,F58220,000000
+262N,RM,262N,(M) Macul - Villa España,,3,,F58220,000000
+264N,RM,264N,Pedro Fontova - Santo Tomas,,3,,AF2B1E,FFFFFF
+271,RM,271,Santiago - San Bernardo,,3,,0951BC,FFFFFF
+272,RM,272,Los Libertadores - Ciudad Empresarial,,3,,AF2B1E,FFFFFF
+286,RM,286,La Pintana - Mall Alto Las Condes,,3,,F58220,000000
+301,RM,301,Juan Antonio Rios - Angelmo,,3,,00A77E,FFFFFF
+301c,RM,301c,(M) La Cisterna - Angelmo,,3,,00A77E,FFFFFF
+302,RM,302,(M) Santa Ana - La Pintana,,3,,00A77E,FFFFFF
+302N,RM,302N,Alameda - La Pintana,,3,,00A77E,FFFFFF
+303,RM,303,Quilicura - Plaza Italia,,3,,00A77E,FFFFFF
+307,RM,307,Lo Marcoleta - Plaza Italia,,3,,00A77E,FFFFFF
+307c,RM,307c,Lo Marcoleta - (M) Los Libertadores,,3,,00A77E,FFFFFF
+307e,RM,307e,Rigoberto Jara - (M) Santa Lucia,,3,,00A77E,FFFFFF
+308,RM,308,Lo Marcoleta - Mapocho,,3,,00A77E,FFFFFF
+308c,RM,308c,San Luis - (M) Lo Cruzat,,3,,00A77E,FFFFFF
+313e,RM,313e,Quilicura - Estacion Central,,3,,00A77E,FFFFFF
+314,RM,314,Lo Marcoleta - Plaza Italia,,3,,00A77E,FFFFFF
+314c,RM,314c,Lo Marcoleta - (M) Lo Cruzat,,3,,00A77E,FFFFFF
+315e,RM,315e,Rigoberto Jara - (M) Santa Lucia,,3,,00A77E,FFFFFF
+321,RM,321,(M) Lo Ovalle - Lo Sierra,,3,,00A77E,FFFFFF
+322,RM,322,(M) Bellavista De La Florida - Jardin Alto,,3,,00A77E,FFFFFF
+323,RM,323,(M) Bellavista De La Florida - La Loma,,3,,00A77E,FFFFFF
+325,RM,325,Gabriela - (M) Irarrazaval,,3,,AF2B1E,FFFFFF
+329,RM,329,Mall Florida Center - Mall Plaza Oeste,,3,,00A77E,FFFFFF
+345,RM,345,Lo Espejo - Alameda,,3,,00A77E,FFFFFF
+346N,RM,346N,Lo Espejo - Alameda,,3,,00A77E,FFFFFF
+348,RM,348,Rinconada - (M) Lo Ovalle,,3,,00A77E,FFFFFF
+385,RM,385,Villa Francia - Florida Center,,3,,00A77E,FFFFFF
+401,RM,401,Maipu - Las Condes,,3,,AF2B1E,FFFFFF
+401c,RM,401c,(M) Escuela Militar - Las Condes,,3,,AF2B1E,FFFFFF
+402,RM,402,Pudahuel - Centro,,3,,AF2B1E,FFFFFF
+403,RM,403,(M) Santa Ana - La Reina,,3,,AF2B1E,FFFFFF
+404,RM,404,El Descanso - Mapocho,,3,,AF2B1E,FFFFFF
+404c,RM,404c,El Descanso - (M) Las Rejas,,3,,AF2B1E,FFFFFF
+405,RM,405,Maipu - Cantagallo,,3,,AF2B1E,FFFFFF
+405c,RM,405c,Plaza Italia - Cantagallo,,3,,AF2B1E,FFFFFF
+406,RM,406,Pudahuel - Cantagallo,,3,,00929E,FFFFFF
+406c,RM,406c,(M) Escuela Militar - Av. El Rodeo,,3,,AF2B1E,FFFFFF
+407,RM,407,Enea - Las Condes,,3,,00929E,FFFFFF
+408,RM,408,Renca - Mapocho,,3,,AF2B1E,FFFFFF
+408e,RM,408e,Renca - Mapocho,,3,,00929E,FFFFFF
+409,RM,409,Mapocho - Plaza San Enrique,,3,,AF2B1E,FFFFFF
+410,RM,410,Renca - Providencia,,3,,AF2B1E,FFFFFF
+410e,RM,410e,Renca - Providencia,,3,,AF2B1E,FFFFFF
+411,RM,411,Providencia - Plaza San Enrique,,3,,AF2B1E,FFFFFF
+412,RM,412,Enea - La Reina,,3,,AF2B1E,FFFFFF
+414e,RM,414e,(M) Pudahuel -  Los Trapenses,,3,,AF2B1E,FFFFFF
+415e,RM,415e,(M) Pudahuel - (M) Manquehue,,3,,AF2B1E,FFFFFF
+417e,RM,417e,Maipu - (M) Manquehue,,3,,AF2B1E,FFFFFF
+418,RM,418,Enea - Av. Tobalaba,,3,,AF2B1E,FFFFFF
+419,RM,419,Villa Los Heroes - Plaza Italia,,3,,AF2B1E,FFFFFF
+420,RM,420,Av. Tobalaba - (M) Escuela Militar,,3,,AF2B1E,FFFFFF
+421,RM,421,Maipu - San Carlos De Apoquindo,,3,,AF2B1E,FFFFFF
+421c,RM,421c,San Carlos De Apoquindo - (M) Los Dominicos,,3,,AF2B1E,FFFFFF
+422,RM,422,Pob. Teniente Merino -  La Reina,,3,,00929E,FFFFFF
+422c,RM,422c,Pob. Teniente Merino -  (M) San Pablo,,3,,AF2B1E,FFFFFF
+423,RM,423,Nueva San Martin - Plaza Italia,,3,,AF2B1E,FFFFFF
+424,RM,424,Pudahuel Sur - (M) U. De Chile,,3,,00929E,FFFFFF
+425,RM,425,Rigoberto Jara - Lo Hermida,,3,,AF2B1E,FFFFFF
+426,RM,426,Pudahuel - La Dehesa,,3,,00929E,FFFFFF
+428,RM,428,(M) Los Libertadores - (M) La Cisterna,,3,,AF2B1E,FFFFFF
+428e,RM,428e,(M) Los Libertadores - (M) La Cisterna,,3,,AF2B1E,FFFFFF
+429,RM,429,Lo Echevers - Lo Hermida,,3,,AF2B1E,FFFFFF
+429c,RM,429c,Quilicura - (M) Tobalaba,,3,,AF2B1E,FFFFFF
+430,RM,430,Quilicura - La Dehesa,,3,,AF2B1E,FFFFFF
+431c,RM,431c,Nueva San Martin - (M) Ecuador,,3,,AF2B1E,FFFFFF
+432N,RM,432N,Maipu - La Reina,,3,,AF2B1E,FFFFFF
+435,RM,435,Quilicura - Vitacura,,3,,AF2B1E,FFFFFF
+444,RM,444,Intermodal Aeropuerto - (M) La Cisterna,,3,,AF2B1E,FFFFFF
+445c,RM,445c,Centro - Vitacura,,3,,AF2B1E,FFFFFF
+481,RM,481,Plaza Italia - Avenida Portales,,3,,AF2B1E,FFFFFF
+486,RM,486,Enea - (M) San Pablo,,3,,AF2B1E,FFFFFF
+501,RM,501,(M) Parque Bustamante - Fleming,,3,,00929E,FFFFFF
+502,RM,502,Cerro Navia - Cantagallo,,3,,00929E,FFFFFF
+502c,RM,502c,Cerro Navia - Santiago,,3,,00929E,FFFFFF
+503,RM,503,Av. La Estrella - Vital Apoquindo,,3,,00929E,FFFFFF
+504,RM,504,El Tranque - Hospital Dipreca,,3,,00929E,FFFFFF
+505,RM,505,Cerro Navia - Las Parcelas,,3,,AF2B1E,FFFFFF
+506,RM,506,Maipu - Peñalolen,,3,,00929E,FFFFFF
+506e,RM,506e,Maipu - Peñalolen,,3,,00929E,FFFFFF
+506v,RM,506v,Villa El Abrazo - Peñalolen,,3,,00929E,FFFFFF
+507,RM,507,Enea - Av Grecia,,3,,00929E,FFFFFF
+507c,RM,507c,(M) Parque O'Higgins - Peñalolen,,3,,00929E,FFFFFF
+508,RM,508,Av. Mapocho - Av. Las Torres,,3,,00929E,FFFFFF
+509,RM,509,Maipu - Mapocho,,3,,00929E,FFFFFF
+510,RM,510,Pudahuel Sur - Rio Claro,,3,,00929E,FFFFFF
+511,RM,511,Cerro Navia - Peñalolen,,3,,00929E,FFFFFF
+513,RM,513,El Montijo - Jose Arrieta,,3,,AF2B1E,FFFFFF
+514,RM,514,Enea - San Luis De Macul,,3,,00929E,FFFFFF
+514c,RM,514c,(M) Salvador - San Luis De Macul,,3,,00929E,FFFFFF
+516,RM,516,Pudahuel Sur - Las Parcelas,,3,,00929E,FFFFFF
+517,RM,517,J. J. Pérez - Peñalolén,,3,,AF2B1E,FFFFFF
+518,RM,518,J.J. Perez - Bilbao,,3,,00929E,FFFFFF
+519,RM,519,Alameda - Av. Grecia,,3,,00929E,FFFFFF
+541N,RM,541N,El Tranque - Colon,,3,,00929E,FFFFFF
+542,RM,542,Cerro Navia - Cantagallo,,3,,00929E,FFFFFF
+546e,RM,546e,Villa El Abrazo - Vitacura,,3,,00929E,FFFFFF
+555,RM,555,Intermodal Aeropuerto - (M) Pajaritos,,3,,00929E,FFFFFF
+712,RM,712,Puente Alto - La Piramide,,3,,AF2B1E,FFFFFF
+722,RM,722,Gonel - Av. Colon,,3,,AF2B1E,FFFFFF
+B01,RM,B01,Huamachuco - El Salto,,3,,AF2B1E,FFFFFF
+B02,RM,B02,El Barrero - Centro,,3,,AF2B1E,FFFFFF
+B02N,RM,B02N,El Barrero - Plaza Italia,,3,,AF2B1E,FFFFFF
+B03,RM,B03,Miraflores - (M) Cerro Blanco,,3,,AF2B1E,FFFFFF
+B04,RM,B04,(M) Los Libertadores - Mapocho,,3,,AF2B1E,FFFFFF
+B05,RM,B05,(M) Los Libertadores - Ciudad Empresarial,,3,,AF2B1E,FFFFFF
+B06,RM,B06,(M) Zapadores - Santa Laura,,3,,AF2B1E,FFFFFF
+B07,RM,B07,M) Los Libertadores - Parque Industrial,,3,,AF2B1E,FFFFFF
+B08,RM,B08,Lo Marcoleta - Mall Plaza Norte,,3,,AF2B1E,FFFFFF
+B09,RM,B09,Lo Boza - Lo Franco,,3,,AF2B1E,FFFFFF
+B10,RM,B10,Santa Marta Huechuraba - (M) Cerro Blanco,,3,,AF2B1E,FFFFFF
+B11,RM,B11,El Salto - Lo Marcoleta,,3,,AF2B1E,FFFFFF
+B12,RM,B12,(M) Zapadores - Lo Marcoleta,,3,,AF2B1E,FFFFFF
+B12c,RM,B12c,Lo Marcoleta - Buenaventura,,3,,AF2B1E,FFFFFF
+B13,RM,B13,Valle Grande - (M) Lo Cruzat,,3,,AF2B1E,FFFFFF
+B14,RM,B14,El Salto - Mapocho,,3,,AF2B1E,FFFFFF
+B15,RM,B15,El Salto - Plaza Italia,,3,,AF2B1E,FFFFFF
+B16,RM,B16,El Carmen - (M) Vespucio Norte,,3,,AF2B1E,FFFFFF
+B17,RM,B17,Huamachuco - Av. Arzobispo Valdivieso,,3,,AF2B1E,FFFFFF
+B18,RM,B18,Villa Pucara - (M) Vespucio Norte,,3,,AF2B1E,FFFFFF
+B18e,RM,B18e,Villa Pucara - (M) Los Libertadores,,3,,AF2B1E,FFFFFF
+B19,RM,B19,(M) Cardenal Caro - (M) Vespucio Norte,,3,,AF2B1E,FFFFFF
+B20,RM,B20,Miraflores - Mapocho,,3,,AF2B1E,FFFFFF
+B21,RM,B21,Plaza Chacabuco - Lo Marcoleta,,3,,AF2B1E,FFFFFF
+B22,RM,B22,Palacio Riesco - Urmeneta,,3,,AF2B1E,FFFFFF
+B24,RM,B24,Huamachuco - Centro,,3,,AF2B1E,FFFFFF
+B25,RM,B25,(M) Vespucio Norte - (M) Cerro Blanco,,3,,AF2B1E,FFFFFF
+B26,RM,B26,(M) Los Libertadores - (M) Estacion Central,,3,,AF2B1E,FFFFFF
+B27,RM,B27,(M) Vespucio Norte - (M) Salvador,,3,,AF2B1E,FFFFFF
+B28,RM,B28,Huamachuco - (M) Estacion Central,,3,,AF2B1E,FFFFFF
+B29,RM,B29,Miraflores - Mapocho,,3,,AF2B1E,FFFFFF
+B30N,RM,B30N,Renca - Centro,,3,,AF2B1E,FFFFFF
+B31N,RM,B31N,Centro - Quilicura,,3,,AF2B1E,FFFFFF
+B32,RM,B32,Valle Lo Campino - Muni. Quilicura,,3,,AF2B1E,FFFFFF
+B33,RM,B33,(M) Los Libertadores - Buenaventura,,3,,AF2B1E,FFFFFF
+B35,RM,B35,(M) Los Libertadores - (M) Zapadores,,3,,AF2B1E,FFFFFF
+B36,RM,B36,(M) Los Libertadores - Pedro Fontova Norte,,3,,AF2B1E,FFFFFF
+B38,RM,B38,Hospital Felix Bulnes - Huamachuco,,3,,00929E,FFFFFF
+B41,RM,B41,Mall Plaza Norte - (M) Cerro Blanco,,3,,AF2B1E,FFFFFF
+B42,RM,B42,(M) Los Libertadores - Valle Grande,,3,,00A77E,FFFFFF
+B43,RM,B43,(M) Vespucio Norte - Lo Marcoleta,,3,,AF2B1E,FFFFFF
+B45,RM,B45,Rigoberto Jara - El Mañio,,3,,00A77E,FFFFFF
+C01,RM,C01,(M) Francisco Bilbao - Cerro 18,,3,,AF2B1E,FFFFFF
+C01c,RM,C01c,(M) Escuela Militar - Plaza San Enrique,,3,,AF2B1E,FFFFFF
+C02,RM,C02,San Carlos De Apoquindo - (M) Escuela Militar,,3,,AF2B1E,FFFFFF
+C02c,RM,C02c,San Carlos De Apoquindo - (M) Los Dominicos,,3,,AF2B1E,FFFFFF
+C03,RM,C03,(M) Tobalaba - Vital Apoquindo,,3,,AF2B1E,FFFFFF
+C03c,RM,C03c,Lo Gallo - Vital Apoquindo,,3,,AF2B1E,FFFFFF
+C05,RM,C05,La Ermita - (M) Francisco Bilbao,,3,,AF2B1E,FFFFFF
+C06,RM,C06,Vital Apoquindo - Ciudad Empresarial,,3,,AF2B1E,FFFFFF
+C07,RM,C07,La Piramide - (M) Francisco Bilbao,,3,,AF2B1E,FFFFFF
+C09,RM,C09,La Dehesa - (M) Los Dominicos,,3,,AF2B1E,FFFFFF
+C09c,RM,C09c,San Carlos De Apoquindo - (M) Los Dominicos,,3,,AF2B1E,FFFFFF
+C10e,RM,C10e,(M) Tobalaba - Camino Juan Pablo Ii,,3,,AF2B1E,FFFFFF
+C11,RM,C11,(M) Escuela Militar - Tabancura,,3,,AF2B1E,FFFFFF
+C13,RM,C13,Vital Apoquindo - Parque Del Sol,,3,,AF2B1E,FFFFFF
+C14,RM,C14,(M) Escuela Militar - Los Trapenses,,3,,AF2B1E,FFFFFF
+C15,RM,C15,(M) Escuela Militar - Estoril,,3,,AF2B1E,FFFFFF
+C16,RM,C16,Vital Apoquindo - El Huinganal,,3,,AF2B1E,FFFFFF
+C17,RM,C17,Cerro 18 - Camino Real,,3,,AF2B1E,FFFFFF
+C18,RM,C18,(M) Escuela Militar - (M) Dorsal,,3,,AF2B1E,FFFFFF
+C19,RM,C19,(M) Escuela Militar - Valle De La Dehesa,,3,,AF2B1E,FFFFFF
+C20,RM,C20,(M) Escuela Militar - Parque Arauco,,3,,AF2B1E,FFFFFF
+C22,RM,C22,(M) Escuela Militar - Rotonda Lo Curro,,3,,AF2B1E,FFFFFF
+C26c,RM,C26c,Ciudad Empresarial - (M) Tobalaba,,3,,AF2B1E,FFFFFF
+C27,RM,C27,Republica De Honduras - (M) Los Dominicos,,3,,AF2B1E,FFFFFF
+C28,RM,C28,(M) Escuela Militar - Los Bravos,,3,,AF2B1E,FFFFFF
+C30e,RM,C30e,(M) Los Leones - Los Trapenses,,3,,AF2B1E,FFFFFF
+C33c,RM,C33c,Vitacura - (M) Tobalaba,,3,,AF2B1E,FFFFFF
+C37,RM,C37,(M) Los Dominicos - San Ramon Oriente,,3,,AF2B1E,FFFFFF
+D01,RM,D01,Antupirén - (M) Plaza Egaña,,3,,AF2B1E,FFFFFF
+D02,RM,D02,(M) Irarrázaval - Álvaro Casanova,,3,,AF2B1E,FFFFFF
+D03,RM,D03,Las Parcelas - (M) Toesca,,3,,AF2B1E,FFFFFF
+D03c,RM,D03c,Las Parcelas - (M) Plaza Egaña,,3,,AF2B1E,FFFFFF
+D05,RM,D05,(M) Franklin - Av. Tobalaba,,3,,AF2B1E,FFFFFF
+D07,RM,D07,Diagonal Las Torres - (M) Franklin,,3,,AF2B1E,FFFFFF
+D07c,RM,D07c,Antupiren - (M) Grecia,,3,,AF2B1E,FFFFFF
+D08,RM,D08,Av. Grecia - (M) Francisco Bilbao,,3,,AF2B1E,FFFFFF
+D09,RM,D09,Av. Grecia Oriente - (M) Manuel Montt,,3,,AF2B1E,FFFFFF
+D10,RM,D10,(M) Carlos Valdovinos - Diagonal Las Torres,,3,,AF2B1E,FFFFFF
+D11,RM,D11,Diagonal Las Torres - Mall Alto Las Condes,,3,,AF2B1E,FFFFFF
+D13,RM,D13,(M) Bellavista De La Florida - (M) Irarrazaval,,3,,00A77E,FFFFFF
+D14,RM,D14,(M) Pedrero - (M) Quilin,,3,,AF2B1E,FFFFFF
+D15,RM,D15,Diagonal Las Torres - La Reina Alta,,3,,AF2B1E,FFFFFF
+D16,RM,D16,San Luis De Macul - (M) Francisco Bilbao,,3,,AF2B1E,FFFFFF
+D17,RM,D17,(M) Quilin - Alto Macul,,3,,AF2B1E,FFFFFF
+D17v,RM,D17v,(M) Quilin - Las Pircas,,3,,AF2B1E,FFFFFF
+D18,RM,D18,Álvaro Casanova - (M) Santa Isabel,,3,,AF2B1E,FFFFFF
+D20,RM,D20,Av. Grecia Oriente - Av. Las Torres,,3,,AF2B1E,FFFFFF
+D26,RM,D26,San Luis De Macul - Maria Angelica,,3,,AF2B1E,FFFFFF
+E01,RM,E01,San Jose De La Estrella - (M) Santa Rosa,,3,,00A77E,FFFFFF
+E02,RM,E02,(M) Lo Ovalle - Diego Portales,,3,,00A77E,FFFFFF
+E03,RM,E03,(M) Lo Ovalle - Jardin Alto,,3,,00A77E,FFFFFF
+E04,RM,E04,Av. La Florida - (M) Franklin,,3,,00A77E,FFFFFF
+E05,RM,E05,(M) La Cisterna - (M) Bellavista De La Florida,,3,,00A77E,FFFFFF
+E06,RM,E06,(M) Bellavista De La Florida -  Maria Angelica,,3,,00A77E,FFFFFF
+E07,RM,E07,(M) Bellavista De La Florida - Rojas Magallanes,,3,,00A77E,FFFFFF
+E08,RM,E08,Diego Portales - (M) Bellavista De La Florida,,3,,00A77E,FFFFFF
+E09,RM,E09,(M) Elisa Correa - (M) Santa Rosa,,3,,00A77E,FFFFFF
+E10,RM,E10,El Hualle - Santa Rosa P21,,3,,00A77E,FFFFFF
+E11,RM,E11,Diego Portales - (M) Santa Rosa,,3,,00A77E,FFFFFF
+E12,RM,E12,Gabriela - Santa Rosa P18,,3,,AF2B1E,FFFFFF
+E13,RM,E13,Gabriela - (M) Bellavista De La Florida,,3,,AF2B1E,FFFFFF
+E14,RM,E14,San Jose De La Estrella - (M) Bellavista De La Florida,,3,,00A77E,FFFFFF
+E15c,RM,E15c,Gabriela - (M) Bellavista De La Florida,,3,,AF2B1E,FFFFFF
+E16,RM,E16,Gabriela - (M) Santa Rosa,,3,,AF2B1E,FFFFFF
+E17,RM,E17,(M) Bellavista De La Florida - Las Perdices,,3,,00A77E,FFFFFF
+E18,RM,E18,(M) La Cisterna - (M) Bellavista De La Florida,,3,,00A77E,FFFFFF
+F01,RM,F01,Villa Padre Hurtado - Casas Viejas,,3,,AF2B1E,FFFFFF
+F01c,RM,F01c,(M) Plaza Puente Alto - Casas Viejas,,3,,AF2B1E,FFFFFF
+F02,RM,F02,Pie Andino - San Geronimo,,3,,AF2B1E,FFFFFF
+F03,RM,F03,(M) Plaza Puente Alto - Plaza San Bernardo,,3,,AF2B1E,FFFFFF
+F03c,RM,F03c,Pie Andino - Villa Las Mamiñas,,3,,AF2B1E,FFFFFF
+F05,RM,F05,(M) La Cisterna - Pie Andino,,3,,AF2B1E,FFFFFF
+F06,RM,F06,(M) La Cisterna - Pie Andino,,3,,AF2B1E,FFFFFF
+F07,RM,F07,Mall Plaza Tobalaba - Villa Padre Hurtado,,3,,AF2B1E,FFFFFF
+F08,RM,F08,Villa Padre Hurtado - Diego Portales,,3,,AF2B1E,FFFFFF
+F09,RM,F09,Pie Andino - (M) Elisa Correa,,3,,AF2B1E,FFFFFF
+F10,RM,F10,San Guillermo - Mall Plaza Tobalaba,,3,,AF2B1E,FFFFFF
+F10c,RM,F10c,San Guillermo - (M) Plaza Puente Alto,,3,,AF2B1E,FFFFFF
+F11,RM,F11,Pie Andino - Las Vizcachas,,3,,AF2B1E,FFFFFF
+F12,RM,F12,Bajos De Mena - (M) Plaza Puente Alto,,3,,AF2B1E,FFFFFF
+F12c,RM,F12c,Villa Costa Azul - (M) Plaza Puente Alto,,3,,AF2B1E,FFFFFF
+F13,RM,F13,Bajos De Mena - Mall Plaza Tobalaba,,3,,AF2B1E,FFFFFF
+F13c,RM,F13c,Mall Plaza Tobalaba - (M) Elisa Correa,,3,,AF2B1E,FFFFFF
+F14,RM,F14,Villa Padre Hurtado - (M) Plaza Puente Alto,,3,,AF2B1E,FFFFFF
+F15,RM,F15,Bajos De Mena - (M) Elisa Correa,,3,,AF2B1E,FFFFFF
+F16,RM,F16,Villa Padre Hurtado - Ribera Rio Maipo,,3,,AF2B1E,FFFFFF
+F18,RM,F18,Villa Chiloe - (M) Plaza Puente Alto,,3,,AF2B1E,FFFFFF
+F20,RM,F20,(M) La Cisterna - Pie Andino,,3,,AF2B1E,FFFFFF
+F24,RM,F24,Casas Viejas - Ciudad Del Sol,,3,,AF2B1E,FFFFFF
+F25,RM,F25,Bajos De Mena - (M) Bellavista De La Florida,,3,,AF2B1E,FFFFFF
+F25e,RM,F25e,Bajos De Mena - (M) Bellavista De La Florida,,3,,AF2B1E,FFFFFF
+F26,RM,F26,Villa Padre Hurtado - San Carlos Oriente,,3,,AF2B1E,FFFFFF
+F27,RM,F27,Villa Padre Hurtado - Villa Portezuelo Oriente,,3,,AF2B1E,FFFFFF
+F29,RM,F29,Pie Andino - Casas Viejas,,3,,AF2B1E,FFFFFF
+F30N,RM,F30N,Bajos De Mena - La Moneda,,3,,AF2B1E,FFFFFF
+F33,RM,F33,Bajos De Mena - (M) Plaza Puente Alto,,3,,AF2B1E,FFFFFF
+G01,RM,G01,La Vara - Santo Tomas,,3,,F58220,000000
+G01c,RM,G01c,La Vara - Santa Rosa Parad. 21,,3,,F58220,000000
+G02,RM,G02,Catemito - Puente Los Morros,,3,,0951BC,FFFFFF
+G04,RM,G04,(M) La Cisterna - Santo Tomas,,3,,F58220,000000
+G05,RM,G05,El Castillo - (M) La Cisterna,,3,,F58220,000000
+G07,RM,G07,San Francisco - Villa La Estrella,,3,,F58220,000000
+G08,RM,G08,Poblacion La Selva - (M) La Cisterna,,3,,F58220,000000
+G08v,RM,G08v,Nos - (M) La Cisterna,,3,,0951BC,FFFFFF
+G09,RM,G09,Santa Margarita - Lo Blanco,,3,,F58220,000000
+G11,RM,G11,(M) Lo Ovalle - Lo Blanco,,3,,F58220,000000
+G12,RM,G12,(M) Lo Ovalle - Av. Lo Espejo,,3,,F58220,000000
+G13,RM,G13,(M) La Cisterna - El Castillo,,3,,F58220,000000
+G13c,RM,G13c,El Castillo - (M) Copa Lo Martinez,,3,,F58220,000000
+G14,RM,G14,Estacion Lo Blanco - Poblacion Valle Nevado,,3,,0951BC,FFFFFF
+G15,RM,G15,(M) La Cisterna - Santo Tomas,,3,,F58220,000000
+G16,RM,G16,(M) La Cisterna - El Castillo,,3,,F58220,000000
+G18,RM,G18,Santo Tomas - (M) Lo Ovalle,,3,,F58220,000000
+G22,RM,G22,Estacion 5 Pinos - (M) La Cisterna,,3,,F58220,000000
+G23,RM,G23,Estacion Lo Blanco - Santa Rosa P.43,,3,,0951BC,FFFFFF
+G24,RM,G24,Poblacion Valle Nevado - San Francisco,,3,,0951BC,FFFFFF
+G27,RM,G27,Mall Plaza Sur - Estacion San Bernardo,,3,,F58220,000000
+G28,RM,G28,Angelmo - La Platina,,3,,00A77E,FFFFFF
+G31,RM,G31,Lo Blanco - Angelmo,,3,,00A77E,FFFFFF
+G32,RM,G32,Santa Ines - Estacion San Bernardo,,3,,F58220,000000
+G34,RM,G34,La Vara - (M) La Cisterna,,3,,F58220,000000
+G35,RM,G35,El Castillo - (M) Copa Lo Martinez,,3,,F58220,000000
+G37,RM,G37,Estacion San Bernardo - El Romeral,,3,,F58220,000000
+G38,RM,G38,Mall Plaza Sur - (M) Hospital El Pino,,3,,F58220,000000
+G39,RM,G39,Lo Espejo - Santa Mercedes,,3,,F58220,000000
+G43,RM,G43,Estacion Lo Blanco - San Alberto De Nos,,3,,0951BC,FFFFFF
+G46,RM,G46,General Urrutia - La Estancilla De Nos,,3,,0951BC,FFFFFF
+H03,RM,H03,(M) Lo Ovalle - Mall Plaza Oeste,,3,,00A77E,FFFFFF
+H05,RM,H05,(M) Carlos Valdovinos - Jose Maria Caro,,3,,AF2B1E,FFFFFF
+H06,RM,H06,Pobl. Las Turbinas - Av. Matta,,3,,00A77E,FFFFFF
+H07,RM,H07,(M) Ñuble - (M) Lo Ovalle,,3,,00A77E,FFFFFF
+H08,RM,H08,Pobl. Las Turbinas - (M) Lo Ovalle,,3,,00A77E,FFFFFF
+H09,RM,H09,Jose Maria Caro - (M) Valdovinos,,3,,AF2B1E,FFFFFF
+H12,RM,H12,Lo Espejo - (M) Franklin,,3,,00A77E,FFFFFF
+H13,RM,H13,Santa Olga - Posta Central,,3,,00A77E,FFFFFF
+H14,RM,H14,Mall Florida Center - (M) Franklin,,3,,00A77E,FFFFFF
+H24,RM,H24,La Victoria - Portal Oeste,,3,,AF2B1E,FFFFFF
+I01,RM,I01,Villa Los Heroes - Hospital Borja Arriarán,,3,,00A77E,FFFFFF
+I02,RM,I02,Rinconada - (M) Laguna Sur,,3,,00A77E,FFFFFF
+I03,RM,I03,Villa Los Heroes - (M) Quinta Normal,,3,,00A77E,FFFFFF
+I03c,RM,I03c,Valle Verde - (M) San Alberto Hurtado,,3,,00A77E,FFFFFF
+I04,RM,I04,Villa El Abrazo - (M) San Alberto Hur,,3,,00A77E,FFFFFF
+I04c,RM,I04c,Villa El Abrazo - (M) Plaza Maipu,,3,,00A77E,FFFFFF
+I04e,RM,I04e,Villa El Abrazo - (M) Plaza Maipu,,3,,00A77E,FFFFFF
+I05,RM,I05,Rinconada - (M) Lo Ovalle,,3,,00A77E,FFFFFF
+I07,RM,I07,Rinconada - Mall Arauco Maipu,,3,,00A77E,FFFFFF
+I08,RM,I08,Mall Arauco Maipu - (M) San Alberto H,,3,,00A77E,FFFFFF
+I08N,RM,I08N,La Farfana - Alameda,,3,,00A77E,FFFFFF
+I08c,RM,I08c,La Farfana - (M) Del Sol,,3,,00A77E,FFFFFF
+I09,RM,I09,Rinconada - (M) U. De Chile,,3,,00A77E,FFFFFF
+I09c,RM,I09c,Rinconada - (M) Las Rejas,,3,,00A77E,FFFFFF
+I09e,RM,I09e,Rinconada - (M) U. De Chile,,3,,00A77E,FFFFFF
+I10,RM,I10,Villa Los Heroes - (M) Quinta Normal,,3,,00A77E,FFFFFF
+I10N,RM,I10N,Villa Los Heroes - Alameda,,3,,00A77E,FFFFFF
+I11,RM,I11,Ciudad Satelite - Rinconada,,3,,00A77E,FFFFFF
+I11N,RM,I11N,Ciudad Satelite - (M) Plaza Maipu,,3,,00A77E,FFFFFF
+I12,RM,I12,Pueblito La Farfana - Mall Plaza Oeste,,3,,00A77E,FFFFFF
+I13,RM,I13,(M) Del Sol - (M) San Alberto Hurtado,,3,,00A77E,FFFFFF
+I14,RM,I14,Mall Plaza Oeste - Estacion Central,,3,,00A77E,FFFFFF
+I14N,RM,I14N,Mall Plaza Oeste - Centro,,3,,00A77E,FFFFFF
+I16,RM,I16,Poblacion Santiago - Ferrocarril,,3,,00A77E,FFFFFF
+I17,RM,I17,Villa Francia - Hospital San Juan De Dios,,3,,00A77E,FFFFFF
+I18,RM,I18,Rinconada - (M) Ula,,3,,00A77E,FFFFFF
+I20,RM,I20,Valle Verde - Marta Ossa Ruiz,,3,,00A77E,FFFFFF
+I21,RM,I21,Villa Hernan Diaz - (M) Plaza Maipu,,3,,00A77E,FFFFFF
+I22,RM,I22,La Farfana - (M) Del Sol,,3,,00A77E,FFFFFF
+I24,RM,I24,Villa Los Maitenes - Plaza Oeste,,3,,00A77E,FFFFFF
+I25,RM,I25,Villa S. Henriquez - Portal Oeste,,3,,00A77E,FFFFFF
+I26,RM,I26,Avenida Portales - (M) Cerrillos,,3,,AF2B1E,FFFFFF
+I35,RM,I35,(M) Del Sol - Padre Hurtado,,3,,F58220,000000
+J01,RM,J01,Pudahuel Sur - (M) Quinta Normal,,3,,00929E,FFFFFF
+J01c,RM,J01c,Carrascal - (M) San Pablo,,3,,00929E,FFFFFF
+J02,RM,J02,Enea - (M) Ula,,3,,AF2B1E,FFFFFF
+J03,RM,J03,El Montijo - (M) Republica,,3,,00929E,FFFFFF
+J04,RM,J04,(M) Neptuno - La Alianza,,3,,00929E,FFFFFF
+J05,RM,J05,El Montijo - (M) Ula,,3,,00929E,FFFFFF
+J06,RM,J06,(M) Pudahuel - (M) Pajaritos,,3,,00929E,FFFFFF
+J07,RM,J07,Noviciado - (M) Pudahuel,,3,,AF2B1E,FFFFFF
+J07c,RM,J07c,(M) Pudahuel - Lo Boza,,3,,00929E,FFFFFF
+J07e,RM,J07e,Noviciado - (M) Pudahuel,,3,,AF2B1E,FFFFFF
+J08,RM,J08,Pudahuel Sur - Lo Franco,,3,,00929E,FFFFFF
+J10,RM,J10,San Daniel - Parque De Los Reyes,,3,,AF2B1E,FFFFFF
+J11,RM,J11,Lomas De Lo Aguirre - (M) Pajaritos,,3,,00929E,FFFFFF
+J12,RM,J12,(M) Pajaritos - Ciudad De Los Valles,,3,,00929E,FFFFFF
+J13,RM,J13,(M) Estacion Central - El Monitjo,,3,,00929E,FFFFFF
+J13c,RM,J13c,(M) San Pablo - El Montijo,,3,,00929E,FFFFFF
+J15c,RM,J15c,La Alianza - (M) Neptuno,,3,,00929E,FFFFFF
+J16,RM,J16,Cerro Navia - (M) Estacion Central,,3,,00929E,FFFFFF
+J17,RM,J17,(M) Pajaritos - Puerto Santiago,,3,,00929E,FFFFFF
+J18,RM,J18,Enea - (M) San Pablo,,3,,AF2B1E,FFFFFF
+J18c,RM,J18c,El Tranque - (M) San Pablo,,3,,AF2B1E,FFFFFF
+J19,RM,J19,Pudahuel Sur - (M) Quinta Normal,,3,,00929E,FFFFFF
+J20,RM,J20,El Montijo - (M) Pudahuel,,3,,00929E,FFFFFF
+J22,RM,J22,(M) Pajaritos - Praderas De Lo Aguirre,,3,,00929E,FFFFFF
+L1,M,L1,Línea 1 (San Pablo - Los Dominicos) ,,1,https://www.metro.cl/el-viaje/plano-de-red,C8102E,FFFFFF
+L2,M,L2,Línea 2 (Vespucio Norte - Hospital El Pino) ,,1,https://www.metro.cl/el-viaje/plano-de-red,F2A900,000000
+L2V,M,L2,Línea 2 Ruta Verde (Expreso Vespucio Norte - Hospital El Pino) ,,1,https://www.metro.cl/el-viaje/ruta-expresa,F2A900,000000
+L2R,M,L2,Línea 2 Ruta Roja (Expreso Vespucio Norte - Hospital El Pino) ,,1,https://www.metro.cl/el-viaje/ruta-expresa,F2A900,000000
+L3,M,L3,Línea 3 (Plaza Quilicura - Fernando Castillo Velasco),,1,https://www.metro.cl/el-viaje/plano-de-red,703F2A,FFFFFF
+L4,M,L4,Línea 4 (Tobalaba - Plaza de Puente Alto) ,,1,https://www.metro.cl/el-viaje/plano-de-red,151F6D,FFFFFF
+L4V,M,L4,Línea 4 Ruta Verde (Expreso Tobalaba - Plaza de Puente Alto) ,,1,https://www.metro.cl/el-viaje/ruta-expresa,151F6D,FFFFFF
+L4R,M,L4,Línea 4 Ruta Roja (Expreso Tobalaba - Plaza de Puente Alto) ,,1,https://www.metro.cl/el-viaje/ruta-expresa,151F6D,FFFFFF
+L4A,M,L4A,Línea 4A (La Cisterna - Vicuña Mackenna) ,,1,https://www.metro.cl/el-viaje/plano-de-red,0072CE,FFFFFF
+L5,M,L5,Línea 5 (Plaza de Maipú - Vicente Valdés) ,,1,https://www.metro.cl/el-viaje/plano-de-red,00965E,FFFFFF
+L5V,M,L5,Línea 5 Ruta Verde (Expreso Plaza de Maipú - Vicente Valdés) ,,1,https://www.metro.cl/el-viaje/ruta-expresa,00965E,FFFFFF
+L5R,M,L5,Línea 5 Ruta Roja (Expreso Plaza de Maipú - Vicente Valdés) ,,1,https://www.metro.cl/el-viaje/ruta-expresa,00965E,FFFFFF
+L6,M,L6,Línea 6 (Cerrillos - Los Leones),,1,https://www.metro.cl/el-viaje/plano-de-red,8E3A80,FFFFFF
+MTN,MT,MTN,Tren Nos - Estación Central,,0,https://www.efe.cl/nuestros-servicios/metrotren-nos/,151CF3,FFFFFF
+MTR,MT,MTR,Tren Rancagua - Estación Central,,0,https://www.efe.cl/nuestros-servicios/metrotren-rancagua/,F3B015,000000
+BA,BAA,BA,Bus Acercamiento Aeropuerto,,3,,0951BC,FFFFFF
