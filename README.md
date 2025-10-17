@@ -1,4 +1,4 @@
-# Proyecto de Ciencia de Dato
+# Proyecto de Ciencia de Datos
 
 ## Propuesta
 
