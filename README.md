@@ -1,5 +1,11 @@
 # Proyecto de Ciencia de Datos
 
+## Entrega Inicial
+
+[Readme de datos](./data/readme.md)
+
+Tenemos 2 copias de notebook, [uno](./notebooks/001%20con%20muetra.ipynb) se corre con la muestra de dato, y [otro](./notebooks/001%20con%20dato%20completo.ipynb) corre con el dato completo.
+
 ## Propuesta
 
 La propuesta en [pdf](/propuesta/Propuesta%20Proyecto%20Intro.%20Ciencia%20de%20Datos.pdf)
