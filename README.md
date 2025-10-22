@@ -4,7 +4,9 @@
 
 [Readme de datos](./data/readme.md)
 
-Tenemos 2 copias de notebook, [uno](./notebooks/001%20con%20muetra.ipynb) se corre con la muestra de dato, y [otro](./notebooks/001%20con%20dato%20completo.ipynb) corre con el dato completo.
+Para facilitar nuetros exploracion, decidimos usar una muestra con 5000 filas de datos.
+
+[notebook](./notebooks/001%20con%20muetra.ipynb)
 
 ## Propuesta
 
