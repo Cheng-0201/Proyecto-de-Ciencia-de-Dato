@@ -15,7 +15,42 @@ Como estudiantes de ciencia de datos, nos motiva aplicar técnicas de Análisis 
 
 
 ### **Analisis**
+- Etapa de Agregación y Transformación
 
+Dado que los datos originales estaban estructurados por viaje individual (una fila = un viaje), fue necesario consolidar la información a nivel de paradero de subida (x_subida, y_subida) para calcular el riesgo acumulado.
+
+Agrupamiento Geoespacial: Se agruparon los datos por las coordenadas únicas (x_subida, y_subida).
+
+Métricas Agregadas: Se calculó el conteo_viajes (volumen de tráfico) y la suma total de total_victimas por paradero.
+
+Variables Categóricas: Para tipo_transporte, comuna_subida y time_type, se utilizó la moda (.mode()) para capturar la característica dominante del paradero.
+
+Creación de la Variable Objetivo (Y): Nivel_Conductor_Requerido
+Se creó una variable categórica de tres niveles (Novato, Intermedio, Experto) basada en los percentiles de la métrica de riesgo (total_victimas agregada por paradero):
+
+Novato: Riesgo $\leq$ Percentil 70 (Q70)
+
+Intermedio: Riesgo entre Percentil 70 y Percentil 90
+
+Experto: Riesgo $\geq$ Percentil 90 (Zonas de riesgo crítico)
+
+Justificación: Esta binarización multinivel permite enfocar los recursos en el 10% de paraderos con mayor siniestralidad acumulada.
+
+Preparación de Variables Predictoras (X)
+
+Codificación: Las variables categóricas (tipo_transporte, comuna_subida, time_type) fueron transformadas mediante One-Hot Encoding (pd.get_dummies) para ser procesadas por el algoritmo.
+
+Normalización: Las variables numéricas (x_subida, y_subida, conteo_viajes) fueron escaladas utilizando StandardScaler. Esto asegura que las coordenadas y el volumen de tráfico contribuyan de manera equitativa a la distancia y las divisiones del árbol, sin que su magnitud distorsione el modelo.
+
+- Modelamiento y Evaluación del Random Forest
+
+Selección del Algoritmo
+
+Algoritmo Elegido: Random Forest Classifier.
+
+Justificación: Se eligió Random Forest por su alta precisión y su capacidad para manejar la complejidad no lineal de las coordenadas geográficas. Además, este modelo proporciona una métrica de Importancia de Características invaluable para justificar las decisiones de asignación de riesgo.
+
+Configuración: Se usaron 100 estimadores (n_estimators=100) y se aplicó el parámetro class_weight='balanced' para mitigar el desbalance natural de clases (donde 'Novato' es la clase más frecuente, mientras que 'Experto' es minoritaria, pero más importante).
 
 
 ### **Resumen de resultados**
