@@ -34,7 +34,7 @@ Intermedio: Riesgo entre Percentil 70 y Percentil 90
 
 Experto: Riesgo $\geq$ Percentil 90 (Zonas de riesgo crítico)
 
-Justificación: Esta binarización multinivel permite enfocar los recursos en el 10% de paraderos con mayor siniestralidad acumulada.
+Justificación: Esto permite enfocar los conductores experimentados en el 10% de paraderos con mayor posiibildad de accidentes.
 
 Preparación de Variables Predictoras (X)
 
@@ -43,8 +43,6 @@ Codificación: Las variables categóricas (tipo_transporte, comuna_subida, time_
 Normalización: Las variables numéricas (x_subida, y_subida, conteo_viajes) fueron escaladas utilizando StandardScaler. Esto asegura que las coordenadas y el volumen de tráfico contribuyan de manera equitativa a la distancia y las divisiones del árbol, sin que su magnitud distorsione el modelo.
 
 - Modelamiento y Evaluación del Random Forest
-
-Selección del Algoritmo
 
 Algoritmo Elegido: Random Forest Classifier.
 
