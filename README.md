@@ -4,7 +4,7 @@ En este proyecto analizamos los datos del tansporte publico de la region metropo
 
 A partir de estos datos tratamos de responder los siguiente preguntas:
 
-1. Como afecta la conticion meteorologica en la cantidad de pasajeros?
+1. Como afecta la condicion meteorologica en la cantidad de pasajeros?
 2. 222
 
 Los detalles del proyecto estan en [readme notebook](./notebooks/README.md)
@@ -13,6 +13,7 @@ Los detalles del proyecto estan en [readme notebook](./notebooks/README.md)
 
 En este proyecto, usamos:
 - Las [Matrices de Viaje](https://www.dtpm.cl/index.php/documentos/matrices-de-viaje) de DTPM.
+- Los [dato de siniestros](https://mapas-conaset.opendata.arcgis.com/search) de Metropolitana.
 - La [mapa vectorial](https://www.bcn.cl/siit/mapas_vectoriales/index_html) de Chile.
 - Los datos meteorologicos de [open-meteo](https://open-meteo.com/).
 
