@@ -4,28 +4,34 @@ En este proyecto analizamos los datos del tansporte publico de la region metropo
 
 A partir de estos datos tratamos de responder los siguiente preguntas:
 
-1. Como afecta la conticion meteolorogica en la cantidad de pasajeros?
+1. Como afecta la conticion meteorologica en la cantidad de pasajeros?
 2. 222
 
 Los detalles del proyecto estan en [readme notebook](./notebooks/README.md)
 
+## Datos
+
+En este proyecto, usamos:
+- Las [Matrices de Viaje](https://www.dtpm.cl/index.php/documentos/matrices-de-viaje) de DTPM.
+- La [mapa vectorial](https://www.bcn.cl/siit/mapas_vectoriales/index_html) de Chile.
+- Los datos meteorologicos de [open-meteo](https://open-meteo.com/).
+
 ## Procedimientos
 
-En primer lugar, limpiamos, transformamos y exploramos estos datos en el notebook [EDA](./notebooks/001_con_muetra.ipynb), a traves de estos procesos tenemos mas intuicion sobre ellos.
+En primer lugar, limpiamos, transformamos y exploramos estos datos en el notebook [EDA](./notebooks/EDA.ipynb), a traves de estos procesos tenemos mas intuicion sobre ellos.
 
-Luego empezamos a responder las preguntar que planteamos al principio.
+Luego empezamos a responder las preguntas que planteamos al principio.
 
-### 1. Como afecta la conticion meteolorogica en la cantidad de pasajeros?
+### 1. Como afecta la conticion meteorologica en la cantidad de pasajeros?
 
 En el notebook [ML_Meteo](./notebooks/ML_Meteo.ipynb) respondemos la primera pregunta.
 
 En este notebook hicimos un modelo para predecir la cantidad de pasajeros usando los datos meteorologicos, nos llegamos un modelo con R2 de 0.36 y RMSE de 144 (i.e. una diferencia de 69% comparando con el promedio de dato real).
 
-Esto significa que el modelo no es tan efecticvo, y a partir de esto concluimos que las conticiones meteolorogicas que elegimos tienen una afecta en la cantidad no tan alta.
+Esto significa que el modelo no es tan eficiente, y a partir de esto concluimos que las conticiones meteorologicas que elegimos tienen una afecta en la cantidad no tan alta, y tienen un efecto negativo (i.e. afectan negativmente).
 
 
 ### 2. 222
-
 
 ## Scripts
 
@@ -38,7 +44,7 @@ Todos estos estan en la carpeta [`/notebooks/script`](/notebooks/script/)
 
 ## Librería Externos
 
-En este proyecto usamos las librería externos `matplotlib`, `numpy`, `pandas`, `requests`, `scikit-learn`, `seaborn`.
+En este proyecto usamos las librería externos `matplotlib`, `numpy`, `pandas`, `geopandas`, `requests`, `scikit-learn`, `seaborn`.
 
 Usa `pip install -r requirements.txt` para instalar todos.
 
