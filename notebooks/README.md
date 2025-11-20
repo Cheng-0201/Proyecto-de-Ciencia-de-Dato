@@ -53,9 +53,9 @@ Configuración: Se usaron 100 estimadores (n_estimators=100) y se aplicó el par
 
 ### **Resumen de resultados**
 
-#### 1. Como la conticion meteolorogica afecta la cantidad de pasajeros
+#### 1. Como la conticion meteorologica afecta la cantidad de pasajeros
 
-En el notebook [ML_Meteo](./ML_Meteo.ipynb) hicimos un modelo para predecir la cantidad de pasajeros usando los datos meteorologicos, nos llegamos un modelo con R2 de 0.36 y RMSE de 144 (i.e. una diferencia de 69% comparando con el promedio de dato real), esto significa que el modelo no es tan efecticvo, y a partir de esto concluimos que las conticiones meteolorogicas que elegimos tienen una afecta en la cantidad no tan alta.
+En el notebook [ML_Meteo](./ML_Meteo.ipynb) hicimos un modelo para predecir la cantidad de pasajeros usando los datos meteorologicos, nos llegamos un modelo con R2 de 0.36 y RMSE de 144 (i.e. una diferencia de 69% comparando con el promedio de dato real), esto significa que el modelo no es tan efecticvo, y a partir de esto concluimos que las conticiones meteorologicas que elegimos tienen una afecta en la cantidad no tan alta.
 
 
 ### **¿Qué podria salir mal?**
