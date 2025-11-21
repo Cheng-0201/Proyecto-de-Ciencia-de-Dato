@@ -12,8 +12,6 @@ Como estudiantes de ciencia de datos, nos motiva aplicar técnicas de Análisis 
 
 **3.- Generar decisiones operacionales:** Nuestro objetivo es generar visualizaciones y métricas concisas que puedan ser utilizadas por la DTPM o futuros estudios para optimizar la programación de itinerarios (frecuencias y distribución de flota) en función de la localización y el día, buscando la estabilidad y predictibilidad del servicio.
 
-
-
 ### **Analisis**
 
 #### 1. Como la condicion meteorologica afecta la cantidad de pasajeros
@@ -24,7 +22,7 @@ Esto significa que el modelo no es tan eficiente, y a partir de esto concluimos 
 
 #### 2. Como los accidentes de trafico afectan el tiempo de transporte y la necesidad de experiencia al volante
 
-En el notebook [link]() juntamos la base de datos de transporte ya analizada con registros de accidentes durante el mismo periodo de tiempo en la region metropolitana. Hicimos un modelo que pudera clasificar el nivel de experiencia ideal para el conductor segun la historia de siniestros en las coordenadas cercanas.
+En el notebook [Analisis_riesgo](./Analisis_riesgo.ipynb) juntamos la base de datos de transporte ya analizada con registros de accidentes durante el mismo periodo de tiempo en la region metropolitana. Hicimos un modelo que pudera clasificar el nivel de experiencia ideal para el conductor segun la historia de siniestros en las coordenadas cercanas.
 
 Mediante un modelo de "random forest" pudimos identificar los sectores criticos donde se deberian establecer mayores recursos para evitar mas accidentes. Los resultados y analisis se encuentran en el notebook
 
@@ -38,6 +36,5 @@ Este análisis se basa en los datos historicos de accidentes de trafico, lo que 
 - Segundo, el modelo puede crear un riesgo de "sobre-asignación" si los paraderos clasificados como 'Experto' son cubiertos de manera excesiva, desviando recursos de zonas 'Intermedio' que también requieren atención. 
 
 - Tercero, como la geografía (coordenadas) es el factor dominante, el modelo no toma en cuenta cambios en la infraestructura o la operación (desvíos de ruta, nuevos paraderos, etc.), ya que asume que el riesgo en un punto geográfico se mantendrá constante, pudiendo llevar a decisiones subóptimas si el entorno cambia.
-
 
 - La muesta que elejimos era muy pequeno en comparacion con el dato real, reduciendo la fiabilidad de nuetros resultados.
