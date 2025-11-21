@@ -9,7 +9,7 @@ A partir de estos datos tratamos de responder los siguiente preguntas:
 
 Los detalles del proyecto estan en [readme notebook](./notebooks/README.md)
 
-Y el tenemos un [notebook completa](./notebooks/Informe_Final.ipynb) que contiene todos los procedimiento que hicimos, desde el principio hasta la final.
+Y el tenemos un [notebook completo](./notebooks/Informe_Final.ipynb) que contiene todos los procedimiento que hicimos, desde el principio hasta la final.
 
 ## Datos
 
