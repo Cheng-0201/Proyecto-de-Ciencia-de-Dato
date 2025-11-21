@@ -5,7 +5,8 @@ En este proyecto analizamos los datos del tansporte publico de la region metropo
 A partir de estos datos tratamos de responder los siguiente preguntas:
 
 1. Como afecta la condicion meteorologica en la cantidad de pasajeros?
-2. Como los accidentes de trafico afectan el tiempo de transporte y la necesidad de experiencia al volante?
+2. Como los accidentes de trafico afectan el tiempo de transporte y la necesidad de experiencia al volante
+3. Uso de distintos Modelos de Aprendizaje supervisado para la predicción de tiempo de viaje
 
 Los detalles del proyecto estan en [readme notebook](./notebooks/README.md)
 
