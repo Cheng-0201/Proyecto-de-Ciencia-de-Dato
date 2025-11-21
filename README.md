@@ -40,7 +40,7 @@ En el notebook [Analisis_riesgo](./notebooks/Analisis_riesgo.ipynb) juntamos la 
 
 Mediante un modelo de "random forest" pudimos identificar los sectores criticos donde se deberian establecer mayores recursos para evitar mas accidentes. Los resultados y analisis se encuentran en el notebook
 
-#### 3. Uso de distintos Modelos de Aprendizaje supervisado para la predicción de tiempo de viaje
+### 3. Uso de distintos Modelos de Aprendizaje supervisado para la predicción de tiempo de viaje
 
 En el notebook [tiempo_viaje](./notebooks/tiempo_viaje.ipynb) respondemos esta pregunta.
 
