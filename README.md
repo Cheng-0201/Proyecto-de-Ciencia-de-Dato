@@ -1,11 +1,11 @@
 # Proyecto de Ciencia de Datos
 
-En este proyecto analizamos los datos del tansporte publico de la region metropolitana de Chile, 
+En este proyecto analizamos los datos del tansporte publico de la region metropolitana de Chile, y los conectamos a datos meteorologicos y de siniestros.
 
 A partir de estos datos tratamos de responder los siguiente preguntas:
 
 1. Como afecta la condicion meteorologica en la cantidad de pasajeros?
-2. 222
+2. Como los accidentes de trafico afectan el tiempo de transporte y la necesidad de experiencia al volante?
 
 Los detalles del proyecto estan en [readme notebook](./notebooks/README.md)
 
@@ -32,7 +32,13 @@ En este notebook hicimos un modelo para predecir la cantidad de pasajeros usando
 Esto significa que el modelo no es tan eficiente, y a partir de esto concluimos que las conticiones meteorologicas que elegimos tienen una afecta en la cantidad no tan alta, y tienen un efecto negativo (i.e. afectan negativmente).
 
 
-### 2. 222
+### 2. Como los accidentes de trafico afectan el tiempo de transporte y la necesidad de experiencia al volante
+
+En el notebook [Analisis_riesgo](./notebooks/Analisis_riesgo.ipynb) juntamos la base de datos de transporte ya analizada con registros de accidentes durante el mismo periodo de tiempo en la region metropolitana. Hicimos un modelo que pudera clasificar el nivel de experiencia ideal para el conductor segun la historia de siniestros en las coordenadas cercanas.
+
+Mediante un modelo de "random forest" pudimos identificar los sectores criticos donde se deberian establecer mayores recursos para evitar mas accidentes. Los resultados y analisis se encuentran en el notebook
+
+
 
 ## Scripts
 
