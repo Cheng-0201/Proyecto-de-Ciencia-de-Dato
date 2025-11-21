@@ -1,6 +1,10 @@
-# Proyecto de Ciencia de Datos
 
-En este proyecto analizamos los datos del tansporte publico de la region metropolitana de Chile, y los conectamos a datos meteorologicos y de siniestros.
+<h1 align="center">
+Proyecto de Ciencia de Datos<br/>
+Estudio sobre Transporte Publico de la Region Metropolitana de Chile
+</h1>
+
+En este proyecto analizamos los datos del transporte publico de la region metropolitana de Chile, y los conectamos a datos meteorologicos y de siniestros.
 
 A partir de estos datos tratamos de responder los siguiente preguntas:
 
