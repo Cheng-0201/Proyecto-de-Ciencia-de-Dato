@@ -26,6 +26,9 @@ En el notebook [Analisis_riesgo](./Analisis_riesgo.ipynb) juntamos la base de da
 
 Mediante un modelo de "random forest" pudimos identificar los sectores criticos donde se deberian establecer mayores recursos para evitar mas accidentes. Los resultados y analisis se encuentran en el notebook
 
+#### 3. Uso de distintos Modelos de Aprendizaje supervisado para la predicción de tiempo de viaje
+
+El análisis comparativo evidencia que el problema de predicción de tiempos de viaje es de naturaleza no lineal. La implementación de modelos basados en árboles (Random Forest y Gradient Boosting) superó significativamente a la regresión lineal base, elevando el coeficiente $R^2$ de 0.68 a 0.81 y reduciendo el error promedio (RMSE) en un 26% (122 unidades). Si bien Random Forest presentó el mejor desempeño marginal, el estancamiento de las métricas en torno a 0.81 indica una saturación de la capacidad predictiva de las variables actuales, sugiriendo que para superar este umbral será necesario incorporar nuevas fuentes de datos (como horarios o flujo vehicular en tiempo real).
 
 ### **¿Qué podria salir mal?**
 
