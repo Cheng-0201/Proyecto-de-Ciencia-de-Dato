@@ -99,22 +99,26 @@ En conclusion, no establece nuestro hipotesis.
 La hipotesis de este analisis seran las siguientes:
 
 > El tiempo de viajes en transporte pubico se ve aumentado segun la cantidad de accidentes ese mismo dia.
-> Es posible definir rutas de transporte publico más peligrosas.`  <br/>
-> Un modelo de Machine Learning puede predecir que tipo de conductor seria necesario para los paraderos con más riesgo
+> Es posible definir rutas de transporte publico más peligrosas y con un modelo de Machine Learning
+> predecir que tipo de conductor seria necesario para los paraderos con más riesgo
 
 Para esta pregunta vamos a usar los siguientes datos:
 - Cantidad de viajes por paradero.
 - Informe de siniestros de trafico de conaset.
 
 #### Relacion entre los datos
-
-Dado que los datos originales estaban estructurados por viaje individual (una fila = un viaje), fue necesario consolidar la información a nivel de paradero de subida (x_subida, y_subida) para calcular el riesgo acumulado.
+la información se consolido a nivel de paradero de subida (x_subida, y_subida) para calcular el riesgo acumulado para medir viajes vs accidentes.
 
 Agrupamiento Geoespacial: Se agruparon los datos por las coordenadas únicas (x_subida, y_subida).
 
 Métricas Agregadas: Se calculó el conteo_viajes (volumen de tráfico) y la suma total de total_victimas por paradero.
 
 <img alt="tiempo-Accidentes" src="./img/choques/tiempo-Accidentes.png" width="50%"/>
+
+> En nuestro primer analisis podemos ver una pequeña relacion entre el tiempo de viaje y
+> la cantidad de victimas de accidentes de trafico (i.e. impacto del siniestro en el flujo normal de transito)
+
+#### Vamos ahora a preparar los datos para medir las rutas mas riesgosas
 
 Preparación de Variables
 
@@ -132,8 +136,6 @@ Novato: Riesgo $\leq$ Percentil 70 (Q70)
 Intermedio: Riesgo entre Percentil 70 y Percentil 90
 
 Experto: Riesgo $\geq$ Percentil 90 (Zonas de riesgo crítico)
-
-<Esto permite enfocar los conductores experimentados en el 10% de paraderos con mayor posiibildad de accidentes.>
 
 
 **Algoritmo Elegido: Random Forest Classifier.**
@@ -164,7 +166,7 @@ El modelo Random Forest demostró ser efectivo para crear fronteras de riesgo ba
 
 <img alt="conductores" src="./img/choques/conductores.png" width="40%"/> <img alt="Comunas_siniestras" src="./img/choques/Comunas_siniestras.png" width="40%"/>
 
-Decisión: Asignar conductores con mayor experiencia únicamente a los paraderos clasificados como 'Experto' para mejorar la seguridad operacional.
+**Decisión: Asignar conductores con mayor experiencia únicamente a los paraderos clasificados como 'Experto' para mejorar la seguridad operacional.**
 
 Este análisis sienta las bases para optimizar la asignación de recursos humanos y reducir los indicadores de siniestralidad.
 
