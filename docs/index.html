@@ -122,20 +122,27 @@ para facilitar nuestra exploración.</li>
 </tr>
 </tbody>
 </table>
-<h3 id="42-cómo-varían-la-comuna-subida-y-comuna-bajada-respecto-la-hora">4.2 ¿Cómo varían la comuna subida y comuna bajada respecto la hora? </h3>
+<h3 id="42-cómo-varia-la-cantidad-de-pasajeros-respecto-el-tipo-de-transporte">4.2 ¿Cómo varia la cantidad de pasajeros respecto el tipo de transporte? </h3>
+<p>Podemos verificar de donde vienen la mayoría de datos de transporte:</p>
+<div align="center">
+<img alt="cantidad_tipo" src="./img/eda/eda_cantidad_tipo.png" width="70%">
+<p><sub>(fig. 4.2.1, Histograma del cantidad de pasajeros segun tipo de transporte)</sub></p>
+</div>
+<p>Claramente podemos ver que la mayoría de nuestros datos provienen de transportes como metro o bus</p>
+<h3 id="43-cómo-varían-la-comuna-subida-y-comuna-bajada-respecto-la-hora">4.3 ¿Cómo varían la comuna subida y comuna bajada respecto la hora? </h3>
 <div align="center">
 <img alt="subida" src="./img/eda/eda_subida.png" width="60%">
-<p><sub>(fig. 4.2.1, Heatmap de la Cantidad de subida)</sub></p>
+<p><sub>(fig. 4.3.1, Heatmap de la Cantidad de subida)</sub></p>
 <br>
 <img alt="bajada" src="./img/eda/eda_bajada.png" width="60%">
-<p><sub>(fig. 4.2.2, Heatmap de la Cantidad de bajado)</sub></p>
+<p><sub>(fig. 4.3.2, Heatmap de la Cantidad de bajado)</sub></p>
 </div>
 <p>Estos mapas nos permiten entender cómo se comporta la demanda de transporte público en Santiago a lo largo de un día. Utilizamos la intensidad del color para representar la cantidad de pasajeros.</p>
 <p>Como pueden ver, la conclusión es que la demanda tanto la de subida como la de bajada está fuertemente centralizada en todos los rangos horarios.</p>
-<h3 id="43-cuánto-tiempo-viaja-la-mayoría-de-pasajeros">4.3 ¿Cuánto tiempo viaja la mayoría de pasajeros? </h3>
+<h3 id="44-cuánto-tiempo-viaja-la-mayoría-de-pasajeros">4.4 ¿Cuánto tiempo viaja la mayoría de pasajeros? </h3>
 <div align="center">
 <img alt="tiempo_viaje" src="./img/eda/eda_tiempo_viaje.png" width="80%">
-<p><sub>(fig. 4.3.1, Histograma del tiempo de viaje)</sub></p>
+<p><sub>(fig. 4.4.1, Histograma del tiempo de viaje)</sub></p>
 </div>
 <p>A través de este gráfico, nos permite identificar la forma, el pico y el sesgo de la duración de todos los viajes.</p>
 <p>La conclusión es que la distribución está fuertemente sesgada a la izquierda, con un pico de frecuencia muy claro.</p>
@@ -143,28 +150,22 @@ para facilitar nuestra exploración.</li>
 <p>Incluso podemos comparar estos mismos tiempos y frecuencia entre cada transporte:</p>
 <div align="center">
 <img alt="tiempo_viaje_tipo" src="./img/eda/eda_tiempo_viaje_tipo.png" width="80%">
-<p><sub>(fig. 4.3.2, Histograma del tiempo de viaje coloreado segun el tipo de transporte)</sub></p>
+<p><sub>(fig. 4.4.2, Histograma del tiempo de viaje coloreado segun el tipo de transporte)</sub></p>
 </div>
 <p>Podemos observar que la frecuencia alta del BUS en el lado izquierdo (viajes cortos) y la distribución más extendida y larga del METRO hacia la derecha, muestran claramente la función de cada uno: el bus maneja el volumen de viajes cortos y locales, mientras que el metro es esencial para los trayectos más largos.</p>
-<h3 id="44-cuáles-son-las-horas-en-que-hay-más-personas">4.4 ¿Cuáles son las horas en que hay más personas? </h3>
+<h3 id="45-cuáles-son-las-horas-en-que-hay-más-personas">4.5 ¿Cuáles son las horas en que hay más personas? </h3>
 <div align="center">
 <img alt="dist" src="./img/eda/eda_dist.png" width="80%">
-<p><sub>(fig. 4.4.1, Histograma del cantidad de pasajeros segun la hora)</sub></p>
+<p><sub>(fig. 4.5.1, Histograma del cantidad de pasajeros segun la hora)</sub></p>
 </div>
 <p>Visualizamos la Cantidad de Pasajeros por Hora del Día en Santiago.</p>
 <p>La conclusión que presenta el gráfico es la clara identificación de los períodos pico o de máxima demanda: se observa un aumento significativo de pasajeros durante la mañana (aproximadamente entre las 7 y 9 AM) y un segundo pico más alto durante la tarde (aproximadamente entre las 5 y 7 PM).</p>
 <p>Incluso podemos revisar en qué horarios toman más tiempo los viajes:</p>
 <div align="center">
 <img alt="tiempo_viaje_dist" src="./img/eda/eda_tiempo_viaje_dist.png" width="80%">
-<p><sub>(fig. 4.4.2, Distribucion del tiempo de viaje segun la hora)</sub></p>
+<p><sub>(fig. 4.5.2, Distribucion del tiempo de viaje segun la hora)</sub></p>
 </div>
 <p>A través de este gráfico se ve cómo se incrementa o estabiliza la duración típica del viaje (la mediana) durante las horas pico de la mañana y la tarde, y cuánta incertidumbre hay en el tiempo de viaje, representada por la altura de las cajas.</p>
-<p>Además, podemos verificar de donde vienen la mayoría de datos de transporte:</p>
-<div align="center">
-<img alt="cantidad_tipo" src="./img/eda/eda_cantidad_tipo.png" width="70%">
-<p><sub>(fig. 4.4.3, Histograma del cantidad de pasajeros segun tipo de el transporte)</sub></p>
-</div>
-<p>Claramente podemos ver que la mayoría de nuestros datos provienen de transportes como metro o bus</p>
 <h2 id="5-responder-las-preguntas">5. Responder las preguntas </h2>
 <h3 id="51-como-afecta-las-condiciones-meteorologicas-en-la-cantidad-de-pasajeros">5.1 Como afecta las condiciones meteorologicas en la cantidad de pasajeros. </h3>
 <p>En este sección verificar el siguiente hipótesis:</p>

@@ -59,19 +59,33 @@ Aún más, podemos especificar el tipo de transporte:
 |   rush_time-night |             BUS |  1222.069767 |
 |                   |           METRO |  1454.527629 |
 
-### 4.2 ¿Cómo varían la comuna subida y comuna bajada respecto la hora?
+### 4.2 ¿Cómo varia la cantidad de pasajeros respecto el tipo de transporte?
+
+Podemos verificar de donde vienen la mayoría de datos de transporte:
+
+<div align="center">
+
+<img alt="cantidad_tipo" src="./img/eda/eda_cantidad_tipo.png" width="70%"/>
+
+<sub>(fig. 4.2.1, Histograma del cantidad de pasajeros segun tipo de transporte)</sub>
+
+</div>
+
+Claramente podemos ver que la mayoría de nuestros datos provienen de transportes como metro o bus
+
+### 4.3 ¿Cómo varían la comuna subida y comuna bajada respecto la hora?
 
 <div align="center">
 
 <img alt="subida" src="./img/eda/eda_subida.png" width="60%"/>
 
-<sub>(fig. 4.2.1, Heatmap de la Cantidad de subida)</sub>
+<sub>(fig. 4.3.1, Heatmap de la Cantidad de subida)</sub>
 
 <br />
 
 <img alt="bajada" src="./img/eda/eda_bajada.png" width="60%"/>
 
-<sub>(fig. 4.2.2, Heatmap de la Cantidad de bajado)</sub>
+<sub>(fig. 4.3.2, Heatmap de la Cantidad de bajado)</sub>
 
 </div>
 
@@ -79,13 +93,13 @@ Estos mapas nos permiten entender cómo se comporta la demanda de transporte pú
 
 Como pueden ver, la conclusión es que la demanda tanto la de subida como la de bajada está fuertemente centralizada en todos los rangos horarios.
 
-### 4.3 ¿Cuánto tiempo viaja la mayoría de pasajeros?
+### 4.4 ¿Cuánto tiempo viaja la mayoría de pasajeros?
 
 <div align="center">
 
 <img alt="tiempo_viaje" src="./img/eda/eda_tiempo_viaje.png" width="80%"/>
 
-<sub>(fig. 4.3.1, Histograma del tiempo de viaje)</sub>
+<sub>(fig. 4.4.1, Histograma del tiempo de viaje)</sub>
 
 </div>
 
@@ -101,19 +115,19 @@ Incluso podemos comparar estos mismos tiempos y frecuencia entre cada transporte
 
 <img alt="tiempo_viaje_tipo" src="./img/eda/eda_tiempo_viaje_tipo.png" width="80%"/>
 
-<sub>(fig. 4.3.2, Histograma del tiempo de viaje coloreado segun el tipo de transporte)</sub>
+<sub>(fig. 4.4.2, Histograma del tiempo de viaje coloreado segun el tipo de transporte)</sub>
 
 </div>
 
 Podemos observar que la frecuencia alta del BUS en el lado izquierdo (viajes cortos) y la distribución más extendida y larga del METRO hacia la derecha, muestran claramente la función de cada uno: el bus maneja el volumen de viajes cortos y locales, mientras que el metro es esencial para los trayectos más largos.
 
-### 4.4 ¿Cuáles son las horas en que hay más personas?
+### 4.5 ¿Cuáles son las horas en que hay más personas?
 
 <div align="center">
 
 <img alt="dist" src="./img/eda/eda_dist.png" width="80%"/>
 
-<sub>(fig. 4.4.1, Histograma del cantidad de pasajeros segun la hora)</sub>
+<sub>(fig. 4.5.1, Histograma del cantidad de pasajeros segun la hora)</sub>
 
 </div>
 
@@ -127,24 +141,11 @@ Incluso podemos revisar en qué horarios toman más tiempo los viajes:
 
 <img alt="tiempo_viaje_dist" src="./img/eda/eda_tiempo_viaje_dist.png" width="80%"/>
 
-<sub>(fig. 4.4.2, Distribucion del tiempo de viaje segun la hora)</sub>
+<sub>(fig. 4.5.2, Distribucion del tiempo de viaje segun la hora)</sub>
 
 </div>
 
 A través de este gráfico se ve cómo se incrementa o estabiliza la duración típica del viaje (la mediana) durante las horas pico de la mañana y la tarde, y cuánta incertidumbre hay en el tiempo de viaje, representada por la altura de las cajas.
-
-Además, podemos verificar de donde vienen la mayoría de datos de transporte:
-
-<div align="center">
-
-<img alt="cantidad_tipo" src="./img/eda/eda_cantidad_tipo.png" width="70%"/>
-
-<sub>(fig. 4.4.3, Histograma del cantidad de pasajeros segun tipo de el transporte)</sub>
-
-</div>
-
-Claramente podemos ver que la mayoría de nuestros datos provienen de transportes como metro o bus
-
 
 ## 5. Responder las preguntas
 
