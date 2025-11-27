@@ -132,7 +132,9 @@ Creación de la Variable Objetivo (Y): Nivel_Conductor_Requerido
 Se creó una variable categórica de tres niveles (Novato, Intermedio, Experto) basada en los percentiles de la métrica de riesgo (total_victimas agregada por paradero):
 
 > Novato: Riesgo $\leq$ Percentil 70 (Q70)
+
 > Intermedio: Riesgo entre Percentil 70 y Percentil 90
+
 > Experto: Riesgo $\geq$ Percentil 90 (Zonas de riesgo crítico)
 
 
@@ -158,19 +160,17 @@ El modelo reveló claramente qué factores son los impulsores del riesgo. Los re
 
 - _Variables Operacionales: Factores como la hora punta (time_type) y el tipo de transporte también contribuyen al riesgo._
 
-  
-El modelo Random Forest demostró ser efectivo para crear fronteras de riesgo basadas en la geografía. Al lograr una buena tasa de predicción (observada en la Matriz de Confusión), aseguramos que la gran mayoría de los paraderos de riesgo crítico ('Experto') sean correctamente identificados, lo que permite una toma de decisiones focalizada:
+<img alt="predicciones" src="./img/choques/predicciones.png" width="50%"/>  <img alt="matriz_confusion" src="./img/choques/matriz_confusion.png" width="40%"/>
 
+
+
+Este análisis sienta las bases para optimizar la asignación de recursos humanos y reducir los indicadores de siniestralidad.
+
+El modelo Random Forest demostró ser efectivo para crear fronteras de riesgo basadas en la geografía. Al lograr una buena tasa de predicción (observada en la Matriz de Confusión), aseguramos que la gran mayoría de los paraderos de riesgo crítico ('Experto') sean correctamente identificados, lo que permite una toma de decisiones focalizada:
 
 <img alt="conductores" src="./img/choques/conductores.png" width="40%"/> <img alt="Comunas_siniestras" src="./img/choques/Comunas_siniestras.png" width="40%"/>
 
 **Decisión: Asignar conductores con mayor experiencia únicamente a los paraderos clasificados como 'Experto' para mejorar la seguridad operacional.**
-
-Este análisis sienta las bases para optimizar la asignación de recursos humanos y reducir los indicadores de siniestralidad.
-
-<img alt="predicciones" src="./img/choques/predicciones.png" width="50%"/>  <img alt="matriz_confusion" src="./img/choques/matriz_confusion.png" width="40%"/>
-
-
 
 # ¿Qué podria salir mal?
 
