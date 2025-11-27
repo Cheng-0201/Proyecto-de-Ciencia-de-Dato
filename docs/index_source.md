@@ -114,7 +114,7 @@ Agrupamiento Geoespacial: Se agruparon los datos por las coordenadas únicas (x_
 
 Métricas Agregadas: Se calculó el conteo_viajes (volumen de tráfico) y la suma total de total_victimas por paradero.
 
-<img alt="tiempo-Accidentes" src="./img/choques/tiempo-Accidentes.png" width="70%"/>
+<img alt="tiempo-Accidentes" src="./img/choques/tiempo-Accidentes.png" width="50%"/>
 
 Preparación de Variables
 
@@ -135,7 +135,7 @@ Experto: Riesgo $\geq$ Percentil 90 (Zonas de riesgo crítico)
 
 <Esto permite enfocar los conductores experimentados en el 10% de paraderos con mayor posiibildad de accidentes.>
 
-<img alt="Comunas_siniestras" src="./img/choques/Comunas_siniestras.png" width="50%"/>
+<img alt="Comunas_siniestras" src="./img/choques/Comunas_siniestras.png" width="40%"/>
 
 
 **Algoritmo Elegido: Random Forest Classifier.**
@@ -158,7 +158,7 @@ El modelo reveló claramente qué factores son los impulsores del riesgo. Los re
 
 - <Variables Operacionales: Factores como la hora punta (time_type) y el tipo de transporte también contribuyen al riesgo.>
 
-  <img alt="variables_modelo" src="./img/choques/variables_modelo.png" width="40%"/>
+  <img alt="variables_modelo" src="./img/choques/variables_modelo.png" width="50%"/>
 
 El modelo Random Forest demostró ser efectivo para crear fronteras de riesgo basadas en la geografía. Al lograr una buena tasa de predicción (observada en la Matriz de Confusión), aseguramos que la gran mayoría de los paraderos de riesgo crítico ('Experto') sean correctamente identificados, lo que permite una toma de decisiones focalizada:
 
@@ -168,7 +168,7 @@ Decisión: Asignar conductores con mayor experiencia únicamente a los paraderos
 
 Este análisis sienta las bases para optimizar la asignación de recursos humanos y reducir los indicadores de siniestralidad.
 
-<img alt="predicciones" src="./img/choques/predicciones.png" width="40%"/>
+<img alt="predicciones" src="./img/choques/predicciones.png" width="50%"/>
 
 **Pensamientos de predicciones**
 
