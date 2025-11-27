@@ -242,9 +242,60 @@ En conclusión, no establece nuestra hipótesis.
 2. Las variables independientes que elegimos están correlacionadas, puede causar multicolinealidad.
 
 
+### 5.2 ¿Podemos predecir el tiempo de viaje? 
+
+5.2.1 La predicción de tiempos de viaje en el transporte público no es solo un dato técnico, sino una herramienta clave para mejorar la calidad del servicio y la planificación urbana. Éstas métricas permiten analizar la experiencia de los pasajeros, permite eventualmente beneficios para la operación y la planificación. 
+
+5.2.2 ¿Qué Betas tenemos para ello? 
+- B1 para "dist_ruta_paraderos" correspondiente a la Distancia de la ruta)
+- B2 para dist_eucl_paraderos correspondiente a la Distancia euclidiana entre paraderos
+- B3 para cada tipo_transporte ya sea bus , tren o metro que previamente se convierte a one hot enconding
+- B4 para cada time_type como Horario Punta vs Valle, tambien convertido a one hot
+- B5 para cada comuna_subida , tambien con one hot
+
+Nuestra x era el tiempo etapa, que era el trayecto 
+
+5.2.1 Modelo de Regresión Lineal:
+- Primero comenzamos modelando la relación entre las variables como si se comportasen linealmente, buscamos un valor que predijera un valor continuo sobre el tiempo entre distintos tramos
+- El objetivo fue predecir el tiempo de viaje (tiempo_etapa) basándose en distancia, tipo de transporte y comuna
+
+5.2.2 Resultado Modelo de Regresión Lineal
+
+- Funcionó como un modelo base (baseline) aceptable, pero superable.
+  R²: 0.68 (Explica el 68% de la variabilidad).
+  RMSE: 460.14 segundos (aprox. 7.6 minutos de error promedio).
+- Sirvió para demostrar que el problema no es puramente lineal.
+    
+
+<div align="center">
+<img alt="Regresion_Lineal" src="./img/modelos/Regresion_Lineal.png" width="80%"/>
+</div>
 
 
-### 5.2 ¿Que impacto tienen los accidentes de trafico en el transporte publico?
+
+<div align="center">
+<img alt="Gradient_Boosting" src="./img/modelos/Gradient_Boosting.png" width="80%"/>
+</div>
+
+
+
+<div align="center">
+<img alt="Random_forest" src="./img/modelos/Random_forest.png" width="80%"/>
+</div>
+
+
+<div align="center">
+<img alt="Sintesis" src="./img/modelos/comparativa.png" width="80%"/>
+</div>
+
+
+
+
+
+
+
+
+### 5.3 ¿Que impacto tienen los accidentes de trafico en el transporte publico?
 La hipotesis de este analisis seran las siguientes:
 
 > El tiempo de viajes en transporte pubico se ve aumentado segun la cantidad de accidentes ese mismo dia.
@@ -255,7 +306,7 @@ Para esta pregunta vamos a usar los siguientes datos:
 - Cantidad de viajes por paradero.
 - Informe de siniestros de trafico de conaset.
 
-#### 5.2.1 Relacion entre los datos
+#### 5.3.1 Relacion entre los datos
 la información se consolido a nivel de paradero de subida (x_subida, y_subida) para calcular el riesgo acumulado para medir viajes vs accidentes.
 
 Agrupamiento Geoespacial: Se agruparon los datos por las coordenadas únicas (x_subida, y_subida).
@@ -267,7 +318,7 @@ Métricas Agregadas: Se calculó el conteo_viajes (volumen de tráfico) y la sum
 > En nuestro primer analisis podemos ver una pequeña relacion entre el tiempo de viaje y
 > la cantidad de victimas de accidentes de trafico (i.e. impacto del siniestro en el flujo normal de transito)
 
-#### 5.2.2 Vamos ahora a preparar los datos para medir las rutas mas riesgosas
+#### 5.3.2 Vamos ahora a preparar los datos para medir las rutas mas riesgosas
 
 Preparación de Variables
 
@@ -275,7 +326,7 @@ Las variables categóricas (tipo_transporte, comuna_subida, time_type) fueron tr
 
 Las variables numéricas (x_subida, y_subida, conteo_viajes) fueron escaladas utilizando StandardScaler. Esto asegura que las coordenadas y el volumen de tráfico contribuyan de manera equitativa a la distancia y las divisiones del árbol, sin que su magnitud distorsione el modelo.
 
-#### 5.2.3 Modelo
+#### 5.3.3 Modelo
 
 Creación de la Variable Objetivo (Y): Nivel_Conductor_Requerido
 Se creó una variable categórica de tres niveles (Novato, Intermedio, Experto) basada en los percentiles de la métrica de riesgo (total_victimas agregada por paradero):
@@ -296,7 +347,7 @@ La gran utilidad de este modelo radica en su capacidad para prevenir el riesgo a
 Se eligió Random Forest por su alta precisión y su capacidad para manejar la complejidad no lineal de las coordenadas geográficas. Además, este modelo proporciona una métrica de Importancia de Características invaluable para justificar las decisiones de asignación de riesgo.
 
 
-#### 5.2.4 **Importancia de las Variables**
+#### 5.3.4 **Importancia de las Variables**
 
 <img alt="variables_modelo" src="./img/choques/variables_modelo.png" width="50%"/>
 
@@ -312,7 +363,7 @@ El modelo reveló claramente qué factores son los impulsores del riesgo. Los re
 
 
 
-#### 5.2.5 Resultado
+#### 5.3.5 Resultado
 
 Este análisis sienta las bases para optimizar la asignación de recursos humanos y reducir los indicadores de siniestralidad.
 
