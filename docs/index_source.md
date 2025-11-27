@@ -256,41 +256,81 @@ En conclusión, no establece nuestra hipótesis.
 Nuestra x era el tiempo etapa, que era el trayecto 
 
 5.2.1 Modelo de Regresión Lineal:
+
+5.2.1.1 Introduccion
 - Primero comenzamos modelando la relación entre las variables como si se comportasen linealmente, buscamos un valor que predijera un valor continuo sobre el tiempo entre distintos tramos
 - El objetivo fue predecir el tiempo de viaje (tiempo_etapa) basándose en distancia, tipo de transporte y comuna
 
-5.2.2 Resultado Modelo de Regresión Lineal
+5.2.1.2 Visualización del modelo Regresión Lineal
+
+<div align="center">
+<img alt="Regresion_Lineal" src="./img/modelos/Regresion_Lineal.png" width="50%"/>
+</div>
+
+5.2.1.3 Resultado Modelo de Regresión Lineal
 
 - Funcionó como un modelo base (baseline) aceptable, pero superable.
   R²: 0.68 (Explica el 68% de la variabilidad).
   RMSE: 460.14 segundos (aprox. 7.6 minutos de error promedio).
 - Sirvió para demostrar que el problema no es puramente lineal.
-    
+
+
+5.2.1.4 ¿Que podría salir mal?
+
+- La principal dificultad fue determinar si nuestras betas representaban un comportamiento lineal, sin embargo teníamos claro que este modelo era solamente construido como baseline. Por lo que no teniamos muchas expectativas de su rendimiento
+
+5.2.2 Modelo Random Forest:
+
+5.2.1.1 Introduccion
+- Se usó para modelar la no-linealidad del tráfico urbano, entendiendo que el contexto (hora, lugar, medio) altera la relación entre distancia y tiempo.
+
+5.2.1.2 Visualización del modelo Random Forest
 
 <div align="center">
-<img alt="Regresion_Lineal" src="./img/modelos/Regresion_Lineal.png" width="80%"/>
+<img alt="Random_forest" src="./img/modelos/Random_forest.png" width="50%"/>
 </div>
 
 
+5.2.1.3 Resultado Modelo de Random Forest
+
+- Fue el modelo que demostró que se podía predecir con alta precisión. Pasó de un R² de 0.68 (Regresión Lineal) a un 0.81. Esto confirmó que las variables tenían suficiente información para hacer buenas predicciones si se usaba el algoritmo correcto.
+
+
+5.2.1.4 ¿Que podría salir mal?
+
+- El modelo Random Forest no puede predecir valores que estén fuera del rango de los datos de entrenamiento.por ejemplo si el modelo nunca vio un viaje que durara 3 horas (por ejemplo, debido a un taco ), nunca predecirá 3 horas. Como máximo, predecirá el valor más alto que vio en el entrenamiento (ej. 2 horas). Este es la mayor debilidad del modelo
+
+
+5.2.2 Modelo Gradient Bossting:
+
+5.2.1.1 Introduccion
+- Mientras que la Regresión Lineal capturó la tendencia general y el Random Forest capturó la estructura no lineal, el Gradient Boosting se utilizó para atacar los errores residuales que los otros modelos no pudieron resolver
+- El objetivo fue evaluar otro modelo para lograr un mejor ajuste
+
+5.2.1.2 Visualización del modelo Regresión Lineal
 
 <div align="center">
-<img alt="Gradient_Boosting" src="./img/modelos/Gradient_Boosting.png" width="80%"/>
+<img alt="Gradient_Boosting" src="./img/modelos/Gradient_Boosting.png" width="50%"/>
 </div>
 
+5.2.1.3 Resultado Modelo de Gradient Boosting:
+
+- El experimento con Gradient Boosting demuestra que el sistema mantiene los mismos numeros. Se logró reducir significativamente el error respecto a la línea base (Regresión Lineal), estabilizando las predicciones en un rango de confianza del 80%, lo cual es un estándar alto para sistemas de transporte urbano complejos como el de Santiago
 
 
-<div align="center">
-<img alt="Random_forest" src="./img/modelos/Random_forest.png" width="80%"/>
-</div>
+5.2.1.4 ¿Que podría salir mal?
 
+- La principal dificultad es que como el modelo funciona minimizando los residuos ,es decir, la diferencia entre la predicción y la realidad, los errores grandes significan mucho más, es decir que es muy sensible a valores atipicos o otliers
+
+
+5.2.1.5 Conclusión: 
 
 <div align="center">
 <img alt="Sintesis" src="./img/modelos/comparativa.png" width="80%"/>
 </div>
 
-
-
-
+El análisis comparativo evidencia que el problema de predicción de tiempos de viaje es de naturaleza no lineal. La implementación de modelos basados en árboles (Random Forest y Gradient Boosting) superó significativamente a la regresión lineal base, elevando el coeficiente 
+R2 de 0.68 a 0.81 y reduciendo el error promedio (RMSE) en un 26% (122 unidades). Si bien Random Forest presentó el mejor desempeño marginal, el estancamiento de las métricas en torno a 0.81 indica una saturación de la capacidad predictiva de las variables actuales, sugiriendo que para superar este umbral seriá necesario incorporar nuevas fuentes de datos (como horarios o flujo vehicular en tiempo real).
 
 
 
