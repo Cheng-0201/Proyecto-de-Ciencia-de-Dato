@@ -2,27 +2,27 @@
     Estudio sobre el Transporte Publico de la Region Metropolitana de Chile
 </h1>
 
-### **Contexto**
+## 1. **Contexto**
 El sistema de transporte público Red Metropolitana de Movilidad en Santiago es una red dinámica que debe adaptar su oferta para satisfacer las variaciones extremas de la demanda a lo largo de la semana.
 
 El desafío de la planificación no solo radica en cubrir la demanda máxima de los días laborales (peak), sino también en asignar recursos de manera eficiente durante los fines de semana, cuando los patrones de viaje cambian drásticamente (viajes recreativos, menor densidad de pasajeros, horarios de servicio más restringidos).
 
-### **Motivación**
+## 2. **Motivación**
 Como estudiantes de ciencia de datos, nos motiva aplicar técnicas de Análisis de Datos para evaluar la equidad y eficiencia del sistema de transporte en función del tiempo y el espacio. Específicamente, buscamos:
 
-**Cuantificar la Disparidad Semanal**
+ - **Cuantificar la Disparidad Semanal**
 
-**Identificar la Vulnerabilidad Geográfica** 
+ - **Identificar la Vulnerabilidad Geográfica** 
 
-**Generar decisiones operacionales**
+ - **Generar decisiones operacionales**
 
-## 1. ETL
+## 3. ETL
 
-## 2. EDA
+## 4. EDA
 
-## 3. Responder las preguntas
+## 5. Responder las preguntas
 
-### 3.1 Como afecta las condiciones meteorologicas en la cantidad de pasajeros.
+### 5.1 Como afecta las condiciones meteorologicas en la cantidad de pasajeros.
 
 En este seccion verificar el siguiente hipotesis:
 
@@ -36,7 +36,7 @@ Para esta pregunta vamos a usar los siguientes datos:
 
 desde `2025-04-21` a `2025-04-27`, y dividida por hora.
 
-#### Relacion entre los datos
+#### 5.1.1 Relacion entre los datos
 
 Para tener un intuicion sobre estos datos, hicimos unos scatterplot y un heatmap de correlacion, los cuales indican las relaciones que pueden tener.
 
@@ -62,11 +62,11 @@ Luego veamos las correlaciones:
 
 Como se ve, todo tiene una correlacion menos que 0.5.
 
-#### Modelo
+#### 5.1.2 Modelo
 
 Para verificar nuestro hipotesis, vamos a entrenar un modelo que recibe la condicion meteorologicas y predice la cantidad de pasajeros, luego comparamos el resultado con el dato real, Asi verificando el eficez del modelo, y nuestro hipotesis pues asumimos que tienen una dependencia entre estos datos.
 
-##### Resultado
+##### 5.1.3 Resultado
 
 Y resultamos los siguientes metricas:
 
@@ -100,7 +100,7 @@ Y ahora comparamos la variable dependiente real con la predicida, para verificar
 
 Se nota que no todos los puntos esta cerca de la identidad, hay muchas excepciones. fuerza la conclusion de que el modelo falta eficez.
 
-#### Conclusion
+#### 5.1.4 Conclusion
 
 En este modelo, la temperatura, la calidad del aire y la humedad afectan la cantidad de pasajeros. Las tres variables lo hacen de forma negativa, sin embargo la humedad, suponemos tiene un efecto positivo.
 
@@ -111,7 +111,7 @@ En conclusion, no establece nuestro hipotesis.
 
 
 
-### 3.2 ¿Que impacto tienen los accidentes de trafico en el transporte publico?
+### 5.2 ¿Que impacto tienen los accidentes de trafico en el transporte publico?
 La hipotesis de este analisis seran las siguientes:
 
 > El tiempo de viajes en transporte pubico se ve aumentado segun la cantidad de accidentes ese mismo dia.
@@ -122,7 +122,7 @@ Para esta pregunta vamos a usar los siguientes datos:
 - Cantidad de viajes por paradero.
 - Informe de siniestros de trafico de conaset.
 
-#### Relacion entre los datos
+#### 5.2.1 Relacion entre los datos
 la información se consolido a nivel de paradero de subida (x_subida, y_subida) para calcular el riesgo acumulado para medir viajes vs accidentes.
 
 Agrupamiento Geoespacial: Se agruparon los datos por las coordenadas únicas (x_subida, y_subida).
@@ -134,7 +134,7 @@ Métricas Agregadas: Se calculó el conteo_viajes (volumen de tráfico) y la sum
 > En nuestro primer analisis podemos ver una pequeña relacion entre el tiempo de viaje y
 > la cantidad de victimas de accidentes de trafico (i.e. impacto del siniestro en el flujo normal de transito)
 
-#### Vamos ahora a preparar los datos para medir las rutas mas riesgosas
+#### 5.2.2 Vamos ahora a preparar los datos para medir las rutas mas riesgosas
 
 Preparación de Variables
 
@@ -142,7 +142,7 @@ Las variables categóricas (tipo_transporte, comuna_subida, time_type) fueron tr
 
 Las variables numéricas (x_subida, y_subida, conteo_viajes) fueron escaladas utilizando StandardScaler. Esto asegura que las coordenadas y el volumen de tráfico contribuyan de manera equitativa a la distancia y las divisiones del árbol, sin que su magnitud distorsione el modelo.
 
-#### Modelo
+#### 5.2.3 Modelo
 
 Creación de la Variable Objetivo (Y): Nivel_Conductor_Requerido
 Se creó una variable categórica de tres niveles (Novato, Intermedio, Experto) basada en los percentiles de la métrica de riesgo (total_victimas agregada por paradero):
@@ -158,12 +158,12 @@ Se creó una variable categórica de tres niveles (Novato, Intermedio, Experto) 
 
 La gran utilidad de este modelo radica en su capacidad para prevenir el riesgo antes de que ocurra, respondiendo a la pregunta:
 
-##### "Si un viaje inicia en el paradero X, ¿debe ser asignado a un conductor Novato, Intermedio o Experto?"
+##### 5.2.4 "Si un viaje inicia en el paradero X, ¿debe ser asignado a un conductor Novato, Intermedio o Experto?"
 
 Se eligió Random Forest por su alta precisión y su capacidad para manejar la complejidad no lineal de las coordenadas geográficas. Además, este modelo proporciona una métrica de Importancia de Características invaluable para justificar las decisiones de asignación de riesgo.
 
 
-##### **Importancia de las Variables**
+##### 5.2.5 **Importancia de las Variables**
 
 <img alt="variables_modelo" src="./img/choques/variables_modelo.png" width="50%"/>
 
@@ -179,7 +179,7 @@ El modelo reveló claramente qué factores son los impulsores del riesgo. Los re
 
 
 
-#### Resultado
+#### 5.2.6 Resultado
 
 Este análisis sienta las bases para optimizar la asignación de recursos humanos y reducir los indicadores de siniestralidad.
 
