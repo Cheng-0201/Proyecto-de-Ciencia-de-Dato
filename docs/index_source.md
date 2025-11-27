@@ -18,13 +18,13 @@ Como estudiantes de ciencia de datos, nos motiva aplicar técnicas de Análisis 
 
 ## 3. ETL
 
-A partir de los datos originales, extraemos los columnas que nos importan que son:
+A partir de los datos originales, extraemos las columnas que nos importan que son:
 
 `tipo_transporte`, `tiene_bajada`, `tiempo_subida`, `tiempo_bajada`, `tiempo_etapa`, `comuna_subida`, `comuna_bajada`, `parada_subida`, `parada_bajada`, `dist_ruta_paraderos`, `dist_eucl_paraderos`, `x_subida`,`y_subida`, `x_bajada`, `y_bajada`
 
 Después la limpiamos y transformamos.
 
-Además agregamos unos columnas como:
+Además agregamos unas columnas como:
 - `time_range`: si es `early`, `morning`, `afternoon` o `night`
 - `time_type`: es una hora de punta o no, si es, es la de mañana o de noche
 para facilitar nuestra exploración.
@@ -46,7 +46,7 @@ Nos resulta:
 |   rush_time-night |  1344.335397 |
 
 
-es muy lógica, pues en las hora puntas hay más transporte.
+donde en las horas normales viajan menos tiempo que las horas de puntas, la cual es muy lógica, pues en las hora puntas hay más transporte.
 
 Aún más, podemos especificar el tipo de transporte:
 
@@ -59,7 +59,9 @@ Aún más, podemos especificar el tipo de transporte:
 |   rush_time-night |             BUS |  1222.069767 |
 |                   |           METRO |  1454.527629 |
 
-### 4.2 ¿Cómo varia la cantidad de pasajeros respecto el tipo de transporte?
+y obtenemos el mismo resultado. Además podemos observar que los buses tienen menos tiempo de viajes que metros.
+
+### 4.2 ¿Cómo varia la cantidad de pasajeros respecto al tipo de transporte?
 
 Podemos verificar de donde vienen la mayoría de datos de transporte:
 
@@ -67,7 +69,7 @@ Podemos verificar de donde vienen la mayoría de datos de transporte:
 
 <img alt="cantidad_tipo" src="./img/eda/eda_cantidad_tipo.png" width="70%"/>
 
-<sub>(fig. 4.2.1, Histograma del cantidad de pasajeros segun tipo de transporte)</sub>
+<sub>(fig. 4.2.1, Histograma de la cantidad de pasajeros segun tipo de transporte)</sub>
 
 </div>
 
@@ -75,21 +77,17 @@ Claramente podemos ver que la mayoría de nuestros datos provienen de transporte
 
 ### 4.3 ¿Cómo varían la comuna subida y comuna bajada respecto la hora?
 
+
 <div align="center">
 
-<img alt="subida" src="./img/eda/eda_subida.png" width="60%"/>
+<img alt="subida" src="./img/eda/eda_subida.png" width="45%"/> <span style="margin: 1em"></span> <img alt="bajada" src="./img/eda/eda_bajada.png" width="45%"/>
 
-<sub>(fig. 4.3.1, Heatmap de la Cantidad de subida)</sub>
-
-<br />
-
-<img alt="bajada" src="./img/eda/eda_bajada.png" width="60%"/>
-
-<sub>(fig. 4.3.2, Heatmap de la Cantidad de bajado)</sub>
+<sub>(fig. 4.3.1 y fig. 4.3.2, Heatmap de la cantidad de subida y bajada)</sub>
 
 </div>
 
-Estos mapas nos permiten entender cómo se comporta la demanda de transporte público en Santiago a lo largo de un día. Utilizamos la intensidad del color para representar la cantidad de pasajeros.
+
+Estas mapas nos permiten entender cómo se comporta la demanda de transporte público en Santiago a lo largo de un día. Utilizamos la intensidad del color para representar la cantidad de pasajeros.
 
 Como pueden ver, la conclusión es que la demanda tanto la de subida como la de bajada está fuertemente centralizada en todos los rangos horarios.
 
@@ -127,7 +125,7 @@ Podemos observar que la frecuencia alta del BUS en el lado izquierdo (viajes cor
 
 <img alt="dist" src="./img/eda/eda_dist.png" width="80%"/>
 
-<sub>(fig. 4.5.1, Histograma del cantidad de pasajeros segun la hora)</sub>
+<sub>(fig. 4.5.1, Histograma de la cantidad de pasajeros segun la hora)</sub>
 
 </div>
 
@@ -149,12 +147,12 @@ A través de este gráfico se ve cómo se incrementa o estabiliza la duración t
 
 ## 5. Responder las preguntas
 
-### 5.1 Como afecta las condiciones meteorologicas en la cantidad de pasajeros.
+### 5.1 ¿Cómo afecta las condiciones meteorologicas en la cantidad de pasajeros?
 
 En este sección verificar el siguiente hipótesis:
 
 > Las condiciones meteorológicas(la temperatura, la humedad, la calidad de aire) afectan la cantidad de pasajeros.
-> Donde la temperatura y la calidad de aire se afectan negativamente, la humedad se afecta positivamente.`  <br/>
+> Donde la temperatura y la calidad de aire se afectan negativamente, la humedad se afecta positivamente.  <br/>
 > (i.e. A mayor temperatura, a mayor el indicador de la calidad de aire o a menos la humedad, menos es la cantidad de pasajeros.)
 
 Para esta pregunta vamos a usar los siguientes datos:
@@ -172,6 +170,7 @@ En primer lugar, veamos la tendencia de los puntos.
 <div align="center">
 
 ![meteo_scatter_corr](./img/meteo/meteo_scatter_corr.png)
+
 <sub>(fig. 3.1.1, Scatterplot entre la cantidad de pasajeros y los datos meteorológicos)</sub>
 
 </div>
@@ -187,7 +186,7 @@ Luego veamos las correlaciones
 
 </div>
 
-Como se ve, todo tiene una correlación menor que 0.5.
+Como se ve, coincide con lo que sacamos con el gráfico anterior, pero todo tiene un valor menor que 0.5.
 
 #### 5.1.2 Modelo
 
@@ -201,7 +200,7 @@ Y resultamos los siguientes métricas:
 Mean Absolute Error (MAE) en datos de Test: 108.86
 Coeficiente R^2 en datos de Test: 0.36
 
-Estos números nos indican que el modelo no es eficaz, es decir capaz de predecir la cantidad de pasajeros.
+Estos números nos indican que el modelo falta eficaz, es decir capaz de predecir la cantidad de pasajeros.
 
 Vamos a complementar estas métricas con unos gráficos.
 
@@ -216,7 +215,7 @@ En el siguiente gráfico podemos verificar el efecto de cada variable, y conclui
 </div>
 
 
-Y ahora comparamos la variable dependiente real con la predicha, para verificar el eficaz del modelo, queremos que los puntos estén cerca de identidad (y=x).
+Y ahora comparamos la variable dependiente real con la predicha, para verificar el eficaz del modelo, queremos que los puntos estén cerca de identidad(i.e. la predicha coincide con la real).
 
 <div align="center">
 
@@ -230,7 +229,7 @@ Se nota que no todos los puntos están cerca de la identidad, hay muchas excepci
 
 #### 5.1.4 Conclusion
 
-En este modelo, la temperatura, la calidad del aire y la humedad afectan la cantidad de pasajeros. Las tres variables lo hacen de forma negativa, sin embargo la humedad, suponemos tiene un efecto positivo.
+En este modelo, la temperatura, la calidad del aire y la humedad afectan la cantidad de pasajeros, donde lo hacen de forma negativa, sin embargo la humedad, suponemos tiene un efecto positivo.
 
 Además este modelo no es capaz de predecir la cantidad de pasajeros, implicando que la cantidad no tiene una dependencia fuerte con los datos meteorológicos.
 
