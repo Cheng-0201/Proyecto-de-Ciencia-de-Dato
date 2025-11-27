@@ -94,6 +94,72 @@ Ademas este modelo no es capaz de predecir la cantidad de pasajeros, implicando 
 
 En conclusion, no establece nuestro hipotesis.
 
+
+### 3.2 ¿Que impacto tienen los accidentes de trafico en el transporte publico?
+La hipotesis de este analisis seran las siguientes:
+
+> El tiempo de viajes en transporte pubico se ve aumentado segun la cantidad de accidentes ese mismo dia.
+> Es posible definir rutas de transporte publico más peligrosas.`  <br/>
+> Un modelo de Machine Learning puede predecir que tipo de conductor seria necesario para los paraderos con más riesgo
+
+Para esta pregunta vamos a usar los siguientes datos:
+- Cantidad de viajes por paradero.
+- Informe de siniestros de trafico de conaset.
+
+#### Relacion entre los datos
+
+Dado que los datos originales estaban estructurados por viaje individual (una fila = un viaje), fue necesario consolidar la información a nivel de paradero de subida (x_subida, y_subida) para calcular el riesgo acumulado.
+
+Agrupamiento Geoespacial: Se agruparon los datos por las coordenadas únicas (x_subida, y_subida).
+
+Métricas Agregadas: Se calculó el conteo_viajes (volumen de tráfico) y la suma total de total_victimas por paradero.
+
+Preparación de Variables Predictoras (X)
+
+Las variables categóricas (tipo_transporte, comuna_subida, time_type) fueron transformadas mediante One-Hot Encoding (pd.get_dummies) para ser procesadas por el algoritmo.
+
+Las variables numéricas (x_subida, y_subida, conteo_viajes) fueron escaladas utilizando StandardScaler. Esto asegura que las coordenadas y el volumen de tráfico contribuyan de manera equitativa a la distancia y las divisiones del árbol, sin que su magnitud distorsione el modelo.
+
+#### Modelo
+
+Creación de la Variable Objetivo (Y): Nivel_Conductor_Requerido
+Se creó una variable categórica de tres niveles (Novato, Intermedio, Experto) basada en los percentiles de la métrica de riesgo (total_victimas agregada por paradero):
+
+Novato: Riesgo $\leq$ Percentil 70 (Q70)
+
+Intermedio: Riesgo entre Percentil 70 y Percentil 90
+
+Experto: Riesgo $\geq$ Percentil 90 (Zonas de riesgo crítico)
+
+<Esto permite enfocar los conductores experimentados en el 10% de paraderos con mayor posiibildad de accidentes.>
+
+
+**Algoritmo Elegido: Random Forest Classifier.**
+
+La gran utilidad de este modelo radica en su capacidad para prevenir el riesgo antes de que ocurra, respondiendo a la pregunta:
+
+##### "Si un viaje inicia en el paradero X, ¿debe ser asignado a un conductor Novato, Intermedio o Experto?"
+
+Se eligió Random Forest por su alta precisión y su capacidad para manejar la complejidad no lineal de las coordenadas geográficas. Además, este modelo proporciona una métrica de Importancia de Características invaluable para justificar las decisiones de asignación de riesgo.
+
+##### Resultado
+
+##### **Importancia de las Variables**
+
+El modelo reveló claramente qué factores son los impulsores del riesgo. Los resultados mostraron que la geografía es el factor dominante:
+
+- <Coordenadas (x_subida, y_subida): Son las variables más importantes. Esto valida que la ubicación exacta del paradero es el factor principal para definir el riesgo.>
+
+- <Volumen de Viajes (conteo_viajes): El tráfico en el paradero es el segundo factor más relevante, confirmando que la densidad operacional aumenta la probabilidad de siniestro.>
+
+- <Variables Operacionales: Factores como la hora punta (time_type) y el tipo de transporte también contribuyen al riesgo.>
+
+El modelo Random Forest demostró ser efectivo para crear fronteras de riesgo basadas en la geografía. Al lograr una buena tasa de predicción (observada en la Matriz de Confusión), aseguramos que la gran mayoría de los paraderos de riesgo crítico ('Experto') sean correctamente identificados, lo que permite una toma de decisiones focalizada:
+
+Decisión: Asignar conductores con mayor experiencia únicamente a los paraderos clasificados como 'Experto' para mejorar la seguridad operacional.
+
+Este análisis sienta las bases para optimizar la asignación de recursos humanos y reducir los indicadores de siniestralidad.
+
 ###### ¿Qué podria salir mal?
 
 1. La muesta que elejimos era muy pequeño en comparacion con el dato real, reduciendo la fiabilidad de nuetros resultados.
