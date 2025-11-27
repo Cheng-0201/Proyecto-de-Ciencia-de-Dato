@@ -95,6 +95,8 @@ Ademas este modelo no es capaz de predecir la cantidad de pasajeros, implicando 
 En conclusion, no establece nuestro hipotesis.
 
 
+
+
 ### 3.2 ¿Que impacto tienen los accidentes de trafico en el transporte publico?
 La hipotesis de este analisis seran las siguientes:
 
@@ -146,7 +148,6 @@ La gran utilidad de este modelo radica en su capacidad para prevenir el riesgo a
 
 Se eligió Random Forest por su alta precisión y su capacidad para manejar la complejidad no lineal de las coordenadas geográficas. Además, este modelo proporciona una métrica de Importancia de Características invaluable para justificar las decisiones de asignación de riesgo.
 
-##### Resultado
 
 ##### **Importancia de las Variables**
 
@@ -164,6 +165,8 @@ El modelo reveló claramente qué factores son los impulsores del riesgo. Los re
 
 
 
+#### Resultado
+
 Este análisis sienta las bases para optimizar la asignación de recursos humanos y reducir los indicadores de siniestralidad.
 
 El modelo Random Forest demostró ser efectivo para crear fronteras de riesgo basadas en la geografía. Al lograr una buena tasa de predicción (observada en la Matriz de Confusión), aseguramos que la gran mayoría de los paraderos de riesgo crítico ('Experto') sean correctamente identificados, lo que permite una toma de decisiones focalizada:
@@ -176,13 +179,10 @@ El modelo Random Forest demostró ser efectivo para crear fronteras de riesgo ba
 
 Este análisis se basa en los datos historicos de accidentes de trafico, lo que introduce varias limitaciones:
 
-Primero, existe un sesgo si los datos no incluyen accidentes leves o no reportados, lo que subestima el riesgo real. Se podria pasar por alto lugares criticos en donde se necesite conductores mas experimentados.
+Primero, **existe un sesgo si los datos no incluyen accidentes leves o no reportados**, lo que subestima el riesgo real. Se podria pasar por alto lugares criticos en donde se necesite conductores mas experimentados.
 
-Segundo, el modelo puede crear un riesgo de "sobre-asignación" si los paraderos clasificados como 'Experto' son cubiertos de manera excesiva, desviando recursos de zonas 'Intermedio' que también requieren atención.
+Segundo, el modelo puede crear un **riesgo de "sobre-asignación" si los paraderos clasificados como 'Experto' son cubiertos de manera excesiva**, desviando recursos de zonas 'Intermedio' que también requieren atención.
 
-Tercero, como la geografía (coordenadas) es el factor dominante, el modelo no toma en cuenta cambios en la infraestructura o la operación (desvíos de ruta, nuevos paraderos, etc.), ya que asume que el riesgo en un punto geográfico se mantendrá constante, pudiendo llevar a decisiones subóptimas si el entorno cambia.
+Tercero, como la geografía (coordenadas) es el factor dominante, **el modelo no toma en cuenta cambios en la infraestructura o la operación (desvíos de ruta, nuevos paraderos, etc.)**, ya que asume que el riesgo en un punto geográfico se mantendrá constante, pudiendo llevar a decisiones subóptimas si el entorno cambia.
 
-Cuarto, La muesta que elejimos era muy pequeno en comparacion con el dato real, reduciendo la fiabilidad de nuetros resultados.
-
-Quinto, Las variables independientes que ejegimos estan correlacionadas, puede causar multicolinealidad.
-
+Cuarto, Debido a las restricciones de permisos, **la muesta que utilizamos no representa completamente a la situacion real que ocurre diariamente** (viajes, accidentes, registros meteorologicos), reduciendo la fiabilidad de nuetros resultados.
