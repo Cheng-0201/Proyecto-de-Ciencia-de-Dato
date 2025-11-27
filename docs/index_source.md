@@ -135,8 +135,6 @@ Experto: Riesgo $\geq$ Percentil 90 (Zonas de riesgo crítico)
 
 <Esto permite enfocar los conductores experimentados en el 10% de paraderos con mayor posiibildad de accidentes.>
 
-<img alt="Comunas_siniestras" src="./img/choques/Comunas_siniestras.png" width="40%"/>
-
 
 **Algoritmo Elegido: Random Forest Classifier.**
 
@@ -162,7 +160,7 @@ El modelo reveló claramente qué factores son los impulsores del riesgo. Los re
 
 El modelo Random Forest demostró ser efectivo para crear fronteras de riesgo basadas en la geografía. Al lograr una buena tasa de predicción (observada en la Matriz de Confusión), aseguramos que la gran mayoría de los paraderos de riesgo crítico ('Experto') sean correctamente identificados, lo que permite una toma de decisiones focalizada:
 
-<img alt="conductores" src="./img/choques/conductores.png" width="70%"/>
+<img alt="conductores" src="./img/choques/conductores.png" width="50%"/>  <img alt="Comunas_siniestras" src="./img/choques/Comunas_siniestras.png" width="50%"/>
 
 Decisión: Asignar conductores con mayor experiencia únicamente a los paraderos clasificados como 'Experto' para mejorar la seguridad operacional.
 
