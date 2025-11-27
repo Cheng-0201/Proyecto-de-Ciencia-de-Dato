@@ -281,49 +281,49 @@ Nuestra x era el tiempo etapa, que era el trayecto
 
 5.2.2 Modelo Random Forest:
 
-5.2.1.1 Introduccion
+5.2.2.1 Introduccion
 - Se usó para modelar la no-linealidad del tráfico urbano, entendiendo que el contexto (hora, lugar, medio) altera la relación entre distancia y tiempo.
 
-5.2.1.2 Visualización del modelo Random Forest
+5.2.2.2 Visualización del modelo Random Forest
 
 <div align="center">
 <img alt="Random_forest" src="./img/modelos/Random_forest.png" width="50%"/>
 </div>
 
 
-5.2.1.3 Resultado Modelo de Random Forest
+5.2.2.3 Resultado Modelo de Random Forest
 
 - Fue el modelo que demostró que se podía predecir con alta precisión. Pasó de un R² de 0.68 (Regresión Lineal) a un 0.81. Esto confirmó que las variables tenían suficiente información para hacer buenas predicciones si se usaba el algoritmo correcto.
 
 
-5.2.1.4 ¿Que podría salir mal?
+5.2.2.4 ¿Que podría salir mal?
 
 - El modelo Random Forest no puede predecir valores que estén fuera del rango de los datos de entrenamiento.por ejemplo si el modelo nunca vio un viaje que durara 3 horas (por ejemplo, debido a un taco ), nunca predecirá 3 horas. Como máximo, predecirá el valor más alto que vio en el entrenamiento (ej. 2 horas). Este es la mayor debilidad del modelo
 
 
-5.2.2 Modelo Gradient Bossting:
+5.2.3 Modelo Gradient Bossting:
 
-5.2.1.1 Introduccion
+5.2.3.1 Introduccion
 - Mientras que la Regresión Lineal capturó la tendencia general y el Random Forest capturó la estructura no lineal, el Gradient Boosting se utilizó para atacar los errores residuales que los otros modelos no pudieron resolver
 - El objetivo fue evaluar otro modelo para lograr un mejor ajuste
 
-5.2.1.2 Visualización del modelo Regresión Lineal
+5.2.3.2 Visualización del modelo Regresión Lineal
 
 <div align="center">
 <img alt="Gradient_Boosting" src="./img/modelos/Gradient_Boosting.png" width="50%"/>
 </div>
 
-5.2.1.3 Resultado Modelo de Gradient Boosting:
+5.2.3.3 Resultado Modelo de Gradient Boosting:
 
 - El experimento con Gradient Boosting demuestra que el sistema mantiene los mismos numeros. Se logró reducir significativamente el error respecto a la línea base (Regresión Lineal), estabilizando las predicciones en un rango de confianza del 80%, lo cual es un estándar alto para sistemas de transporte urbano complejos como el de Santiago
 
 
-5.2.1.4 ¿Que podría salir mal?
+5.2.3.4 ¿Que podría salir mal?
 
 - La principal dificultad es que como el modelo funciona minimizando los residuos ,es decir, la diferencia entre la predicción y la realidad, los errores grandes significan mucho más, es decir que es muy sensible a valores atipicos o otliers
 
 
-5.2.1.5 Conclusión: 
+5.2.4 Conclusión: 
 
 <div align="center">
 <img alt="Sintesis" src="./img/modelos/comparativa.png" width="80%"/>
