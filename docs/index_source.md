@@ -114,7 +114,9 @@ Agrupamiento Geoespacial: Se agruparon los datos por las coordenadas únicas (x_
 
 Métricas Agregadas: Se calculó el conteo_viajes (volumen de tráfico) y la suma total de total_victimas por paradero.
 
-Preparación de Variables Predictoras (X)
+<img alt="tiempo-Accidentes" src="./img/choques/tiempo-Accidentes.png" width="70%"/>
+
+Preparación de Variables
 
 Las variables categóricas (tipo_transporte, comuna_subida, time_type) fueron transformadas mediante One-Hot Encoding (pd.get_dummies) para ser procesadas por el algoritmo.
 
