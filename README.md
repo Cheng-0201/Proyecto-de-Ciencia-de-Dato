@@ -16,6 +16,8 @@ Los detalles del proyecto estan en [readme notebook](./notebooks/README.md)
 
 Y el tenemos un [notebook completo](./notebooks/Informe_Final.ipynb) que contiene todos los procedimiento que hicimos, desde el principio hasta la final.
 
+Ademas tenemos una [pagina](https://cheng-0201.github.io/Proyecto-de-Ciencia-de-Dato/) para presentar este proyecto.
+
 ## Datos
 
 En este proyecto, usamos:
