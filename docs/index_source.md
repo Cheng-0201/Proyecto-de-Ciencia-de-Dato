@@ -168,16 +168,21 @@ Decisión: Asignar conductores con mayor experiencia únicamente a los paraderos
 
 Este análisis sienta las bases para optimizar la asignación de recursos humanos y reducir los indicadores de siniestralidad.
 
-<img alt="predicciones" src="./img/choques/predicciones.png" width="50%"/>
+<img alt="predicciones" src="./img/choques/predicciones.png" width="50%"/>  <img alt="matriz_confusion" src="./img/choques/matriz_confusion.png" width="40%"/>
 
-**Pensamientos de predicciones**
-
-
-<img alt="matriz_confusion" src="./img/choques/matriz_confusion.png" width="40%"/>
 
 
 ###### ¿Qué podria salir mal?
 
-1. La muesta que elejimos era muy pequeño en comparacion con el dato real, reduciendo la fiabilidad de nuetros resultados.
-2. Las variables independientes que ejegimos estan correlacionadas, puede causar multicolinealidad.
+Este análisis se basa en los datos historicos de accidentes de trafico, lo que introduce varias limitaciones:
+
+Primero, existe un sesgo si los datos no incluyen accidentes leves o no reportados, lo que subestima el riesgo real. Se podria pasar por alto lugares criticos en donde se necesite conductores mas experimentados.
+
+Segundo, el modelo puede crear un riesgo de "sobre-asignación" si los paraderos clasificados como 'Experto' son cubiertos de manera excesiva, desviando recursos de zonas 'Intermedio' que también requieren atención.
+
+Tercero, como la geografía (coordenadas) es el factor dominante, el modelo no toma en cuenta cambios en la infraestructura o la operación (desvíos de ruta, nuevos paraderos, etc.), ya que asume que el riesgo en un punto geográfico se mantendrá constante, pudiendo llevar a decisiones subóptimas si el entorno cambia.
+
+Cuarto, La muesta que elejimos era muy pequeno en comparacion con el dato real, reduciendo la fiabilidad de nuetros resultados.
+
+Quinto, Las variables independientes que ejegimos estan correlacionadas, puede causar multicolinealidad.
 
