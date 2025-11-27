@@ -281,7 +281,9 @@ Creación de la Variable Objetivo (Y): Nivel_Conductor_Requerido
 Se creó una variable categórica de tres niveles (Novato, Intermedio, Experto) basada en los percentiles de la métrica de riesgo (total_victimas agregada por paradero):
 
 > Novato: Riesgo $\leq$ Percentil 70 (Q70)
+
 > Intermedio: Riesgo entre Percentil 70 y Percentil 90
+
 > Experto: Riesgo $\geq$ Percentil 90 (Zonas de riesgo crítico)
 
 
