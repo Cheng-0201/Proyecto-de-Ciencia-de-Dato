@@ -131,11 +131,9 @@ Las variables numéricas (x_subida, y_subida, conteo_viajes) fueron escaladas ut
 Creación de la Variable Objetivo (Y): Nivel_Conductor_Requerido
 Se creó una variable categórica de tres niveles (Novato, Intermedio, Experto) basada en los percentiles de la métrica de riesgo (total_victimas agregada por paradero):
 
-Novato: Riesgo $\leq$ Percentil 70 (Q70)
-
-Intermedio: Riesgo entre Percentil 70 y Percentil 90
-
-Experto: Riesgo $\geq$ Percentil 90 (Zonas de riesgo crítico)
+> Novato: Riesgo $\leq$ Percentil 70 (Q70)
+> Intermedio: Riesgo entre Percentil 70 y Percentil 90
+> Experto: Riesgo $\geq$ Percentil 90 (Zonas de riesgo crítico)
 
 
 **Algoritmo Elegido: Random Forest Classifier.**
@@ -154,11 +152,11 @@ Se eligió Random Forest por su alta precisión y su capacidad para manejar la c
 
 El modelo reveló claramente qué factores son los impulsores del riesgo. Los resultados mostraron que la geografía es el factor dominante:
 
-- <Coordenadas (x_subida, y_subida): Son las variables más importantes. Esto valida que la ubicación exacta del paradero es el factor principal para definir el riesgo.>
+- _Coordenadas (x_subida, y_subida): Son las variables más importantes. Esto valida que la ubicación exacta del paradero es el factor principal para definir el riesgo._
 
-- <Volumen de Viajes (conteo_viajes): El tráfico en el paradero es el segundo factor más relevante, confirmando que la densidad operacional aumenta la probabilidad de siniestro.>
+- _Volumen de Viajes (conteo_viajes): El tráfico en el paradero es el segundo factor más relevante, confirmando que la densidad operacional aumenta la probabilidad de siniestro._
 
-- <Variables Operacionales: Factores como la hora punta (time_type) y el tipo de transporte también contribuyen al riesgo.>
+- _Variables Operacionales: Factores como la hora punta (time_type) y el tipo de transporte también contribuyen al riesgo._
 
   
 El modelo Random Forest demostró ser efectivo para crear fronteras de riesgo basadas en la geografía. Al lograr una buena tasa de predicción (observada en la Matriz de Confusión), aseguramos que la gran mayoría de los paraderos de riesgo crítico ('Experto') sean correctamente identificados, lo que permite una toma de decisiones focalizada:
