@@ -158,12 +158,12 @@ Se creó una variable categórica de tres niveles (Novato, Intermedio, Experto) 
 
 La gran utilidad de este modelo radica en su capacidad para prevenir el riesgo antes de que ocurra, respondiendo a la pregunta:
 
-##### "Si un viaje inicia en el paradero X, ¿debe ser asignado a un conductor Novato, Intermedio o Experto?"
+#####     "Si un viaje inicia en el paradero X, ¿debe ser asignado a un conductor Novato, Intermedio o Experto?"
 
 Se eligió Random Forest por su alta precisión y su capacidad para manejar la complejidad no lineal de las coordenadas geográficas. Además, este modelo proporciona una métrica de Importancia de Características invaluable para justificar las decisiones de asignación de riesgo.
 
 
-##### 5.2.4 **Importancia de las Variables**
+#### 5.2.4 **Importancia de las Variables**
 
 <img alt="variables_modelo" src="./img/choques/variables_modelo.png" width="50%"/>
 
