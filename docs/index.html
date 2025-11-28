@@ -1,5 +1,5 @@
 <!DOCTYPE html><html><head>
-      <title>index_source</title>
+      <title>Proyecto ICsD</title>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       
@@ -324,13 +324,9 @@ la cantidad de victimas de accidentes de trafico (i.e. impacto del siniestro en 
 <p>Creación de la Variable Objetivo (Y): Nivel_Conductor_Requerido<br>
 Se creó una variable categórica de tres niveles (Novato, Intermedio, Experto) basada en los percentiles de la métrica de riesgo (total_victimas agregada por paradero):</p>
 <blockquote>
-<p>Novato: Riesgo <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>≤</mo></mrow><annotation encoding="application/x-tex">\leq</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7719em;vertical-align:-0.136em;"></span><span class="mrel">≤</span></span></span></span> Percentil 70 (Q70)</p>
-</blockquote>
-<blockquote>
-<p>Intermedio: Riesgo entre Percentil 70 y Percentil 90</p>
-</blockquote>
-<blockquote>
-<p>Experto: Riesgo <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>≥</mo></mrow><annotation encoding="application/x-tex">\geq</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7719em;vertical-align:-0.136em;"></span><span class="mrel">≥</span></span></span></span> Percentil 90 (Zonas de riesgo crítico)</p>
+<p>Novato: Riesgo <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>≤</mo></mrow><annotation encoding="application/x-tex">\leq</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7719em;vertical-align:-0.136em;"></span><span class="mrel">≤</span></span></span></span> Percentil 70 (Q70)<br>
+Intermedio: Riesgo entre Percentil 70 y Percentil 90<br>
+Experto: Riesgo <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>≥</mo></mrow><annotation encoding="application/x-tex">\geq</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7719em;vertical-align:-0.136em;"></span><span class="mrel">≥</span></span></span></span> Percentil 90 (Zonas de riesgo crítico)</p>
 </blockquote>
 <p><strong>Algoritmo Elegido: Random Forest Classifier.</strong></p>
 <p>La gran utilidad de este modelo radica en su capacidad para prevenir el riesgo antes de que ocurra, respondiendo a la pregunta:</p>
