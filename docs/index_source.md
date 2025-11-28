@@ -385,7 +385,7 @@ La gran utilidad de este modelo radica en su capacidad para prevenir el riesgo a
 Se eligió Random Forest por su alta precisión y su capacidad para manejar la complejidad no lineal de las coordenadas geográficas. Además, este modelo proporciona una métrica de Importancia de Características invaluable para justificar las decisiones de asignación de riesgo.
 
 
-#### 5.3.4 **Importancia de las Variables**
+#### 5.3.4 Importancia de las Variables
 
 <img alt="variables_modelo" src="./img/choques/variables_modelo.png" width="50%"/>
 
