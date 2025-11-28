@@ -170,6 +170,7 @@ En primer lugar, veamos la tendencia de los puntos.
 <div align="center">
 
 ![meteo_scatter_corr](./img/meteo/meteo_scatter_corr.png)
+
 <sub>(fig. 5.1.1-1, Scatterplot entre la cantidad de pasajeros y los datos meteorológicos)</sub>
 
 </div>
@@ -181,6 +182,7 @@ Luego veamos las correlaciones
 <div align="center">
 
 ![meteo_heat_corr](./img/meteo/meteo_heat_corr.png)
+
 <sub>(fig. 5.1.1-2, Heatmap de correlación entre la cantidad de pasajeros y los datos meteorológicos)</sub>
 
 </div>
