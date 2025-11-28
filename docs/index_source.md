@@ -10,15 +10,15 @@ El sistema de transporte público Red Metropolitana de Movilidad en Santiago es 
 
 Como estudiantes de ciencia de datos, nos motiva aplicar técnicas de Análisis de Datos para evaluar la equidad y eficiencia del sistema de transporte en función del tiempo y el espacio. Específicamente, buscamos:
 
- - **Cuantificar la Disparidad Semanal**
+- **Cuantificar la Disparidad Semanal**
 
- - **Identificar la Vulnerabilidad Geográfica** 
+- **Identificar la Vulnerabilidad Geográfica** 
 
- - **Generar decisiones operacionales**
+- **Generar decisiones operacionales**
 
 ## 3. ETL
 
-A partir de los datos originales, extraemos las columnas que nos importan que son:
+A partir de los datos originales(las [Matrices de Viaje](https://www.dtpm.cl/index.php/documentos/matrices-de-viaje) de DTPM), extraemos las columnas que nos importan que son:
 
 `tipo_transporte`, `tiene_bajada`, `tiempo_subida`, `tiempo_bajada`, `tiempo_etapa`, `comuna_subida`, `comuna_bajada`, `parada_subida`, `parada_bajada`, `dist_ruta_paraderos`, `dist_eucl_paraderos`, `x_subida`,`y_subida`, `x_bajada`, `y_bajada`
 
@@ -82,7 +82,7 @@ Claramente podemos ver que la mayoría de nuestros datos provienen de transporte
 
 <img alt="subida" src="./img/eda/eda_subida.png" width="45%"/> <span style="margin: 1em"></span> <img alt="bajada" src="./img/eda/eda_bajada.png" width="45%"/>
 
-<sub>(fig. 4.3.1 y fig. 4.3.2, Heatmap de la cantidad de subida y bajada)</sub>
+<sub>(fig. 4.3-1 y fig. 4.3-2, Heatmap de la cantidad de subida y bajada)</sub>
 
 </div>
 
@@ -97,7 +97,7 @@ Como pueden ver, la conclusión es que la demanda tanto la de subida como la de 
 
 <img alt="tiempo_viaje" src="./img/eda/eda_tiempo_viaje.png" width="80%"/>
 
-<sub>(fig. 4.4.1, Histograma del tiempo de viaje)</sub>
+<sub>(fig. 4.4-1, Histograma del tiempo de viaje)</sub>
 
 </div>
 
@@ -113,7 +113,7 @@ Incluso podemos comparar estos mismos tiempos y frecuencia entre cada transporte
 
 <img alt="tiempo_viaje_tipo" src="./img/eda/eda_tiempo_viaje_tipo.png" width="80%"/>
 
-<sub>(fig. 4.4.2, Histograma del tiempo de viaje coloreado segun el tipo de transporte)</sub>
+<sub>(fig. 4.4-2, Histograma del tiempo de viaje coloreado segun el tipo de transporte)</sub>
 
 </div>
 
@@ -125,7 +125,7 @@ Podemos observar que la frecuencia alta del BUS en el lado izquierdo (viajes cor
 
 <img alt="dist" src="./img/eda/eda_dist.png" width="80%"/>
 
-<sub>(fig. 4.5.1, Histograma de la cantidad de pasajeros segun la hora)</sub>
+<sub>(fig. 4.5-1, Histograma de la cantidad de pasajeros segun la hora)</sub>
 
 </div>
 
@@ -139,7 +139,7 @@ Incluso podemos revisar en qué horarios toman más tiempo los viajes:
 
 <img alt="tiempo_viaje_dist" src="./img/eda/eda_tiempo_viaje_dist.png" width="80%"/>
 
-<sub>(fig. 4.5.2, Distribucion del tiempo de viaje segun la hora)</sub>
+<sub>(fig. 4.5-2, Distribucion del tiempo de viaje segun la hora)</sub>
 
 </div>
 
@@ -170,8 +170,7 @@ En primer lugar, veamos la tendencia de los puntos.
 <div align="center">
 
 ![meteo_scatter_corr](./img/meteo/meteo_scatter_corr.png)
-
-<sub>(fig. 3.1.1, Scatterplot entre la cantidad de pasajeros y los datos meteorológicos)</sub>
+<sub>(fig. 5.1.1-1, Scatterplot entre la cantidad de pasajeros y los datos meteorológicos)</sub>
 
 </div>
 
@@ -182,7 +181,7 @@ Luego veamos las correlaciones
 <div align="center">
 
 ![meteo_heat_corr](./img/meteo/meteo_heat_corr.png)
-<sub>(fig. 3.1.2, heatmap de correlación entre la cantidad de pasajeros y los datos meteorológicos)</sub>
+<sub>(fig. 5.1.1-2, Heatmap de correlación entre la cantidad de pasajeros y los datos meteorológicos)</sub>
 
 </div>
 
@@ -192,7 +191,7 @@ Como se ve, coincide con lo que sacamos con el gráfico anterior, pero todo tien
 
 Para verificar nuestra hipótesis, vamos a entrenar un modelo que recibe la condición meteorológicas y predice la cantidad de pasajeros, luego comparamos el resultado con el dato real, así verificando el eficaz del modelo y nuestra hipótesis pues asumimos que tienen una dependencia entre estos datos.
 
-##### 5.1.3 Resultado
+#####  Resultado
 
 Y resultamos los siguientes métricas:
 
@@ -210,10 +209,9 @@ En el siguiente gráfico podemos verificar el efecto de cada variable, y conclui
 
 <img alt="meteo_influence" src="./img/meteo/meteo_influence.png" width="70%"/>
 
-<sub>(fig. 3.1.3, rectas que representan el afecto de cada variable)</sub>
+<sub>(fig. 5.1.2-1, Rectas que representan el afecto de cada variable)</sub>
 
 </div>
-
 
 Y ahora comparamos la variable dependiente real con la predicha, para verificar el eficaz del modelo, queremos que los puntos estén cerca de identidad(i.e. la predicha coincide con la real).
 
@@ -221,13 +219,13 @@ Y ahora comparamos la variable dependiente real con la predicha, para verificar 
 
 <img alt="meteo_comparation" src="./img/meteo/meteo_comparation.png" width="50%"/>
 
-<sub>(fig. 3.1.4, rectas que compara la variable dependiente real y la predicha)</sub>
+<sub>(fig. 5.1.2-2, Grafico que compara la variable dependiente real y la predicha)</sub>
 
 </div>
 
 Se nota que no todos los puntos están cerca de la identidad, hay muchas excepciones. verifica la conclusión de que el modelo falta eficaz.
 
-#### 5.1.4 Conclusion
+#### 5.1.3 Conclusion
 
 En este modelo, la temperatura, la calidad del aire y la humedad afectan la cantidad de pasajeros, donde lo hacen de forma negativa, sin embargo la humedad, suponemos tiene un efecto positivo.
 
@@ -235,15 +233,105 @@ Además este modelo no es capaz de predecir la cantidad de pasajeros, implicando
 
 En conclusión, no establece nuestra hipótesis.
 
-###### ¿Qué podría salir mal?
+##### ¿Qué podría salir mal?
 
 1. La muestra que elegimos era muy pequeña en comparación con el dato real, reduciendo la fiabilidad de nuestros resultados.
 2. Las variables independientes que elegimos están correlacionadas, puede causar multicolinealidad.
 
 
+### 5.2 ¿Podemos predecir el tiempo de viaje? 
+
+La predicción de tiempos de viaje en el transporte público no es solo un dato técnico, sino una herramienta clave para mejorar la calidad del servicio y la planificación urbana. Éstas métricas permiten analizar la experiencia de los pasajeros, permite eventualmente beneficios para la operación y la planificación. 
+
+¿Qué Betas tenemos para ello? 
+- B1 para "dist_ruta_paraderos" correspondiente a la Distancia de la ruta)
+- B2 para dist_eucl_paraderos correspondiente a la Distancia euclidiana entre paraderos
+- B3 para cada tipo_transporte ya sea bus , tren o metro que previamente se convierte a one hot enconding
+- B4 para cada time_type como Horario Punta vs Valle, tambien convertido a one hot
+- B5 para cada comuna_subida , tambien con one hot
+
+Nuestra x era el tiempo etapa, que era el trayecto 
+
+#### 5.2.1 Modelo de Regresión Lineal:
+
+##### Introduccion
+
+- Primero comenzamos modelando la relación entre las variables como si se comportasen linealmente, buscamos un valor que predijera un valor continuo sobre el tiempo entre distintos tramos
+- El objetivo fue predecir el tiempo de viaje (tiempo_etapa) basándose en distancia, tipo de transporte y comuna
+
+##### Visualización del modelo Regresión Lineal
+
+<div align="center">
+<img alt="Regresion_Lineal" src="./img/modelos/Regresion_Lineal.png" width="50%"/>
+</div>
+
+##### Resultado Modelo de Regresión Lineal
+
+- Funcionó como un modelo base (baseline) aceptable, pero superable.
+  R²: 0.68 (Explica el 68% de la variabilidad).
+  RMSE: 460.14 segundos (aprox. 7.6 minutos de error promedio).
+- Sirvió para demostrar que el problema no es puramente lineal.
 
 
-### 5.2 ¿Que impacto tienen los accidentes de trafico en el transporte publico?
+##### ¿Que podría salir mal?
+
+- La principal dificultad fue determinar si nuestras betas representaban un comportamiento lineal, sin embargo teníamos claro que este modelo era solamente construido como baseline. Por lo que no teniamos muchas expectativas de su rendimiento
+
+#### 5.2.2 Modelo Random Forest:
+
+##### Introduccion
+- Se usó para modelar la no-linealidad del tráfico urbano, entendiendo que el contexto (hora, lugar, medio) altera la relación entre distancia y tiempo.
+
+##### Visualización del modelo Random Forest
+
+<div align="center">
+<img alt="Random_forest" src="./img/modelos/Random_forest.png" width="50%"/>
+</div>
+
+##### Resultado Modelo de Random Forest
+
+- Fue el modelo que demostró que se podía predecir con alta precisión. Pasó de un R² de 0.68 (Regresión Lineal) a un 0.81. Esto confirmó que las variables tenían suficiente información para hacer buenas predicciones si se usaba el algoritmo correcto.
+
+
+##### ¿Que podría salir mal?
+
+- El modelo Random Forest no puede predecir valores que estén fuera del rango de los datos de entrenamiento.por ejemplo si el modelo nunca vio un viaje que durara 3 horas (por ejemplo, debido a un taco ), nunca predecirá 3 horas. Como máximo, predecirá el valor más alto que vio en el entrenamiento (ej. 2 horas). Este es la mayor debilidad del modelo
+
+
+#### 5.2.3 Modelo Gradient Bossting:
+
+##### Introduccion
+- Mientras que la Regresión Lineal capturó la tendencia general y el Random Forest capturó la estructura no lineal, el Gradient Boosting se utilizó para atacar los errores residuales que los otros modelos no pudieron resolver
+- El objetivo fue evaluar otro modelo para lograr un mejor ajuste
+
+##### Visualización del modelo Regresión Lineal
+
+<div align="center">
+<img alt="Gradient_Boosting" src="./img/modelos/Gradient_Boosting.png" width="50%"/>
+</div>
+
+##### Resultado Modelo de Gradient Boosting:
+
+- El experimento con Gradient Boosting demuestra que el sistema mantiene los mismos numeros. Se logró reducir significativamente el error respecto a la línea base (Regresión Lineal), estabilizando las predicciones en un rango de confianza del 80%, lo cual es un estándar alto para sistemas de transporte urbano complejos como el de Santiago
+
+
+##### ¿Que podría salir mal?
+
+- La principal dificultad es que como el modelo funciona minimizando los residuos ,es decir, la diferencia entre la predicción y la realidad, los errores grandes significan mucho más, es decir que es muy sensible a valores atipicos o otliers
+
+
+#### 5.2.4 Conclusión: 
+
+<div align="center">
+<img alt="Sintesis" src="./img/modelos/comparativa.png" width="80%"/>
+</div>
+
+El análisis comparativo evidencia que el problema de predicción de tiempos de viaje es de naturaleza no lineal. La implementación de modelos basados en árboles (Random Forest y Gradient Boosting) superó significativamente a la regresión lineal base, elevando el coeficiente R2 de 0.68 a 0.81 y reduciendo el error promedio (RMSE) en un 26% (122 unidades). Si bien Random Forest presentó el mejor desempeño marginal, el estancamiento de las métricas en torno a 0.81 indica una saturación de la capacidad predictiva de las variables actuales, sugiriendo que para superar este umbral seriá necesario incorporar nuevas fuentes de datos (como horarios o flujo vehicular en tiempo real).
+
+
+
+
+### 5.3 ¿Que impacto tienen los accidentes de trafico en el transporte publico?
 La hipotesis de este analisis seran las siguientes:
 
 > El tiempo de viajes en transporte pubico se ve aumentado segun la cantidad de accidentes ese mismo dia.
@@ -254,7 +342,7 @@ Para esta pregunta vamos a usar los siguientes datos:
 - Cantidad de viajes por paradero.
 - Informe de siniestros de trafico de conaset.
 
-#### 5.2.1 Relacion entre los datos
+#### 5.3.1 Relacion entre los datos
 la información se consolido a nivel de paradero de subida (x_subida, y_subida) para calcular el riesgo acumulado para medir viajes vs accidentes.
 
 Agrupamiento Geoespacial: Se agruparon los datos por las coordenadas únicas (x_subida, y_subida).
@@ -266,7 +354,7 @@ Métricas Agregadas: Se calculó el conteo_viajes (volumen de tráfico) y la sum
 > En nuestro primer analisis podemos ver una pequeña relacion entre el tiempo de viaje y
 > la cantidad de victimas de accidentes de trafico (i.e. impacto del siniestro en el flujo normal de transito)
 
-#### 5.2.2 Vamos ahora a preparar los datos para medir las rutas mas riesgosas
+#### 5.3.2 Vamos ahora a preparar los datos para medir las rutas mas riesgosas
 
 Preparación de Variables
 
@@ -274,13 +362,15 @@ Las variables categóricas (tipo_transporte, comuna_subida, time_type) fueron tr
 
 Las variables numéricas (x_subida, y_subida, conteo_viajes) fueron escaladas utilizando StandardScaler. Esto asegura que las coordenadas y el volumen de tráfico contribuyan de manera equitativa a la distancia y las divisiones del árbol, sin que su magnitud distorsione el modelo.
 
-#### 5.2.3 Modelo
+#### 5.3.3 Modelo
 
 Creación de la Variable Objetivo (Y): Nivel_Conductor_Requerido
 Se creó una variable categórica de tres niveles (Novato, Intermedio, Experto) basada en los percentiles de la métrica de riesgo (total_victimas agregada por paradero):
 
 > Novato: Riesgo $\leq$ Percentil 70 (Q70)
+
 > Intermedio: Riesgo entre Percentil 70 y Percentil 90
+
 > Experto: Riesgo $\geq$ Percentil 90 (Zonas de riesgo crítico)
 
 
@@ -288,12 +378,12 @@ Se creó una variable categórica de tres niveles (Novato, Intermedio, Experto) 
 
 La gran utilidad de este modelo radica en su capacidad para prevenir el riesgo antes de que ocurra, respondiendo a la pregunta:
 
-#####     "Si un viaje inicia en el paradero X, ¿debe ser asignado a un conductor Novato, Intermedio o Experto?"
+##### "Si un viaje inicia en el paradero X, ¿debe ser asignado a un conductor Novato, Intermedio o Experto?"
 
 Se eligió Random Forest por su alta precisión y su capacidad para manejar la complejidad no lineal de las coordenadas geográficas. Además, este modelo proporciona una métrica de Importancia de Características invaluable para justificar las decisiones de asignación de riesgo.
 
 
-#### 5.2.4 **Importancia de las Variables**
+#### 5.3.4 **Importancia de las Variables**
 
 <img alt="variables_modelo" src="./img/choques/variables_modelo.png" width="50%"/>
 
@@ -309,7 +399,7 @@ El modelo reveló claramente qué factores son los impulsores del riesgo. Los re
 
 
 
-#### 5.2.5 Resultado
+#### 5.3.5 Resultado
 
 Este análisis sienta las bases para optimizar la asignación de recursos humanos y reducir los indicadores de siniestralidad.
 
@@ -319,7 +409,7 @@ El modelo Random Forest demostró ser efectivo para crear fronteras de riesgo ba
 
 **Decisión: Asignar conductores con mayor experiencia únicamente a los paraderos clasificados como 'Experto' para mejorar la seguridad operacional.**
 
-# ¿Qué podria salir mal?
+##### ¿Qué podria salir mal?
 
 Este análisis se basa en los datos historicos de accidentes de trafico, lo que introduce varias limitaciones:
 
