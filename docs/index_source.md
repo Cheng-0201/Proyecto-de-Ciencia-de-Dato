@@ -69,7 +69,7 @@ Podemos verificar de donde vienen la mayoría de datos de transporte:
 
 <img alt="cantidad_tipo" src="./img/eda/eda_cantidad_tipo.png" width="70%"/>
 
-<sub>(fig. 4.2.1, Histograma de la cantidad de pasajeros segun tipo de transporte)</sub>
+<sub>(fig. 4.2-1, Histograma de la cantidad de pasajeros segun tipo de transporte)</sub>
 
 </div>
 
