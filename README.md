@@ -1,7 +1,7 @@
 
 <h1 align="center">
 Proyecto de Ciencia de Datos<br/>
-Estudio sobre Transporte Publico de la Region Metropolitana de Chile
+Estudio sobre el Transporte Publico de la Region Metropolitana de Chile
 </h1>
 
 En este proyecto analizamos los datos del transporte publico de la region metropolitana de Chile, y los conectamos a datos meteorologicos y de siniestros.
